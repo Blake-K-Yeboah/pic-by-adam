@@ -8,15 +8,23 @@ $primary: #4793A3;
     box-sizing: border-box;
 }
 
+body {
+    font-family: Helvetica, Arial, sans-serif;
+}
+
 //////// NAVBAR STYLES ////////
 
 .navbar {
     height: 80px;
     width: 100vw;
     box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
-    padding: 0 10vw;
+    padding: 0 5vw;
     display:flex;
     justify-content: space-between;
+    border-top: 5px solid $primary;
+    position:fixed;
+    top:0;
+    left: 0;
 
     .navbar-brand {
         width: 100px;
@@ -29,9 +37,78 @@ $primary: #4793A3;
     .nav-list {
         height: 80px;
         list-style: none;
+        display:flex;
 
         .nav-item {
             line-height: 80px;
+            
+            &:not(:last-of-type) {
+                margin-right: 1.5em;
+            }
+
+            .nav-link {
+                text-decoration: none;
+                color: $darkGrey;
+                font-size: .85rem;
+                font-weight: bold;
+                cursor: pointer;
+                transition: color .3s ease-in-out;
+
+                &:hover {
+                    color: $primary;
+                }
+
+                &.active {
+                    color: $primary;
+                    cursor: default;
+                }
+            }
         }
     }
 }
+
+//////// HEADER STYLES ////////
+
+.home-header {
+    height: 70vh;
+    margin-top: 80px;
+    background: url('../img/Header Background.png') center/cover no-repeat;
+
+    .text-container {
+        height: 50vh;
+        position:absolute; 
+        top:50%;
+        left: 50%;
+        transform:translate(-50%, -50%);
+        text-align:center;
+
+        .small-heading {
+            font-weight: 500;
+            text-transform:uppercase;
+            color: $darkGrey;
+            font-size: 1.25rem;
+            margin-bottom: .5em;
+
+            .blue {
+                color: $primary;
+                font-weight: bold;
+            }
+        }
+
+        .big-heading {
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: 6rem;
+            transform: scale(1, 1.25);
+            color: $darkGrey;
+
+            &.primary {
+                color: $primary;
+                position:relative;
+                top: -10px;
+            }
+        }
+    }
+}
+
+//////// BUTTON STYLES ////////
