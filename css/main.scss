@@ -11,6 +11,7 @@ $primary: #4793A3;
 body {
     font-family: Helvetica, Arial, sans-serif;
     background: $primary;
+    overflow-x: hidden;
 }
 
 //////// NAVBAR STYLES ////////
@@ -155,16 +156,18 @@ body {
 //////// WORK STYLES ////////
 
 .work {
-    padding: 4em 0;
     background: url('../img/our-work-bg.png') center/cover no-repeat fixed;
+    width: 100vw;
+    padding: 6em 0;
 
     .work-heading {
         color: #ffffff;
         text-transform: uppercase;
         text-align:center;
-        width: 25vw;
+        width: 650px;
         position: relative;
         left:50%;
         transform:translateX(-50%);
+        font-size: 2rem;
     }
 }
