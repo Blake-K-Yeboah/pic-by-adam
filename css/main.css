@@ -13,8 +13,8 @@ body {
 .navbar {
   height: 80px;
   width: 100vw;
-  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
   background: #fff;
   padding: 0 5vw;
   display: -webkit-box;
@@ -27,6 +27,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 1;
 }
 
 .navbar .navbar-brand {
@@ -78,7 +79,7 @@ body {
   margin-top: 80px;
   width: 100vw;
   position: relative;
-  background: url("../img/Header Background.png") center/cover no-repeat;
+  background: url("../img/pattern-bg.png") center/cover no-repeat;
 }
 
 .home-header .text-container {
@@ -153,5 +154,21 @@ body {
 .btn.primary:hover {
   background: #4793A3;
   color: #fff;
+}
+
+.work {
+  padding: 4em 0;
+  background: url("../img/our-work-bg.png") center/cover no-repeat fixed;
+}
+
+.work .work-heading {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  width: 25vw;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=main.css.map */
