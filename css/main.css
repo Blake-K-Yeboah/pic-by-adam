@@ -11,6 +11,18 @@ body {
   overflow-x: hidden;
 }
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4793A3;
+}
+
 .navbar {
   height: 80px;
   width: 100vw;
@@ -108,11 +120,12 @@ body {
 
 .home-header .text-container .big-heading {
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 900;
   font-size: 6rem;
-  -webkit-transform: scale(1, 1.25);
-          transform: scale(1, 1.25);
+  -webkit-transform: scale(1.2, 1.25);
+          transform: scale(1.2, 1.25);
   color: #333333;
+  letter-spacing: -6px;
 }
 
 .home-header .text-container .big-heading.primary {
