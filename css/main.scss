@@ -182,6 +182,90 @@ body {
         position: relative;
         left:50%;
         transform:translateX(-50%);
-        font-size: 2rem;
+        font-size: 1.85rem;
+        letter-spacing: -1px;
+    }
+
+    .divider {
+        width: 175px;
+        background: #fff;
+        height: 3px;
+        margin: 1.5em auto;
+    }
+
+    .text {
+        font-size: 1.1rem;
+        color: #eee;
+        width: 550px;
+        text-align:center;
+        margin: 0 auto;
+        line-height: 1.5em;
+    }
+
+    .carousel {
+        width: 50vw;
+        position:relative;
+        margin: 1.5em auto 0 auto;
+        height: 50vh;
+
+        .image-placeholder {
+            background: black;
+            border: 1px solid #fff;
+            position:absolute;
+
+            &.image-1 {
+                width: 40%;
+                height: calc((0.4 * 50vw) / 1.5);
+                top: 30%;
+                left:50%;
+                transform:translateX(-50%);
+                z-index: 2;
+            }
+
+            &.image-2, &.image-3 {
+                width: 30%;
+                height: calc((0.3 * 50vw) / 1.5);
+                top: 27.5%;
+                background: lime;
+                opacity: .8;
+                z-index: 1;
+
+                &.image-3 {
+                    right: 20px;
+                }
+
+                &.image-2 {
+                    left: 20px;
+                }
+            }
+
+            &.image-4, &.image-5 {
+                width: 15%;
+                height: calc((0.15 * 50vw) / 1.5);
+                top: 22.5%;
+                z-index: 0;
+                background: green;
+                opacity: .6;
+                
+                &.image-4 {
+                    right: 25%;
+                }
+
+                &.image-5 {
+                    left: 25%;
+                }
+            }
+
+            &.image-6 {
+                width: 8%;
+                height: calc((0.08 * 50vw) / 1.5);
+                top: 22.5%;
+                z-index: 0;
+                background: lightgreen;
+                opacity: .4;
+                left:50%;
+                transform:translateX(-50%);
+            }
+        }
     }
 }
