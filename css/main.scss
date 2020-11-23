@@ -226,7 +226,7 @@ body {
                 width: 30%;
                 height: calc((0.3 * 50vw) / 1.5);
                 top: 27.5%;
-                background: lime;
+                background: blue;
                 opacity: .8;
                 z-index: 1;
 
@@ -244,7 +244,7 @@ body {
                 height: calc((0.15 * 50vw) / 1.5);
                 top: 22.5%;
                 z-index: 0;
-                background: green;
+                background: cyan;
                 opacity: .6;
                 
                 &.image-4 {
@@ -261,7 +261,7 @@ body {
                 height: calc((0.08 * 50vw) / 1.5);
                 top: 22.5%;
                 z-index: 0;
-                background: lightgreen;
+                background: lightblue;
                 opacity: .4;
                 left:50%;
                 transform:translateX(-50%);
