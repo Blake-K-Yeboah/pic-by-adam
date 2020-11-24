@@ -14,6 +14,10 @@ body {
     overflow-x: hidden;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 //////// SCROLLBAR STYLES ////////
 ::-webkit-scrollbar {
     width: 5px;
@@ -41,7 +45,7 @@ body {
     position:fixed;
     top:0;
     left: 0;
-    z-index: 1;
+    z-index: 3;
 
     .navbar-brand {
         width: 100px;
@@ -84,7 +88,7 @@ body {
     }
 }
 
-//////// HEADER STYLES ////////
+//////// HEADER (HOME) STYLES ////////
 
 .home-header {
     height: 70vh;
@@ -165,9 +169,28 @@ body {
             color: #fff;
         }
     }
+
+    &.light {
+        background: #fff;
+        color: $darkGrey;
+        border: none;
+        padding: 12px 28px;
+        cursor: pointer;
+
+        &:hover {
+            background: #ccc;
+        }
+    }
+
+    &.primary-filled {
+        color: #fff;
+        background: $primary;
+        border: none;
+        padding: 12px 28px;
+    }
 }
 
-//////// WORK STYLES ////////
+//////// WORK (HOME) STYLES ////////
 
 .work {
     background: url('../img/our-work-bg.png') center/cover no-repeat fixed;
@@ -208,10 +231,12 @@ body {
         margin: 1.5em auto 0 auto;
         height: 50vh;
 
-        .image-placeholder {
-            background: black;
-            border: 1px solid #fff;
+        .carousel-image {
             position:absolute;
+            object-fit: cover;
+            object-position: 50% 50%;
+            transition: 1s ease-in-out;
+            border-radius: 5px;
 
             &.image-1 {
                 width: 40%;
@@ -222,16 +247,15 @@ body {
                 z-index: 2;
             }
 
-            &.image-2, &.image-3 {
+            &.image-2, &.image-6 {
                 width: 30%;
                 height: calc((0.3 * 50vw) / 1.5);
                 top: 27.5%;
-                background: blue;
                 opacity: .8;
                 z-index: 1;
 
-                &.image-3 {
-                    right: 20px;
+                &.image-6 {
+                    left: 67%;
                 }
 
                 &.image-2 {
@@ -239,33 +263,88 @@ body {
                 }
             }
 
-            &.image-4, &.image-5 {
+            &.image-3, &.image-5 {
                 width: 15%;
                 height: calc((0.15 * 50vw) / 1.5);
                 top: 22.5%;
                 z-index: 0;
-                background: cyan;
                 opacity: .6;
                 
-                &.image-4 {
-                    right: 25%;
+                &.image-5 {
+                    left: 60%;
                 }
 
-                &.image-5 {
+                &.image-3 {
                     left: 25%;
                 }
             }
 
-            &.image-6 {
+            &.image-4 {
                 width: 8%;
                 height: calc((0.08 * 50vw) / 1.5);
                 top: 22.5%;
                 z-index: 0;
-                background: lightblue;
                 opacity: .4;
                 left:50%;
                 transform:translateX(-50%);
             }
+        }
+    }
+
+    .btn {
+        position:relative;
+        left: calc(50% - 60px);
+        transform:translateX(-50%);
+    }
+}
+
+//////// ABOUT (HOME) STYLES ////////
+
+.about-section {
+    height: 92vh;
+    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+
+    .text-section {
+        width: 100%;
+        height: 100%;
+        background: url('../img/pattern-bg.png') center/cover no-repeat;
+
+        .title {
+            color: $darkGrey;
+            text-transform: uppercase;
+            font-size: 3rem;
+            text-align:center;
+            margin-top: 25%;
+
+            .primary {
+                color: $primary;
+            }
+        }
+
+        .text {
+            width:47.5%;
+            text-align:center;
+            margin: 2em auto 3em auto;
+            line-height: 1.5;
+            color: lighten($darkGrey, 10%);
+            font-weight: lighter;
+        }
+
+        .btn {
+            position:relative;
+            left: calc(50% - 65px);
+            transform:translateX(-50%);
+        }
+    }
+
+    .image-section {
+    
+        .logo {
+            width: 100%;
+            position: relative;
+            top: -200px;
         }
     }
 }

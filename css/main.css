@@ -11,6 +11,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -40,7 +44,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
 }
 
 .navbar .navbar-brand {
@@ -170,6 +174,25 @@ body {
   color: #fff;
 }
 
+.btn.light {
+  background: #fff;
+  color: #333333;
+  border: none;
+  padding: 12px 28px;
+  cursor: pointer;
+}
+
+.btn.light:hover {
+  background: #ccc;
+}
+
+.btn.primary-filled {
+  color: #fff;
+  background: #4793A3;
+  border: none;
+  padding: 12px 28px;
+}
+
 .work {
   background: url("../img/our-work-bg.png") center/cover no-repeat fixed;
   width: 100vw;
@@ -212,13 +235,18 @@ body {
   height: 50vh;
 }
 
-.work .carousel .image-placeholder {
-  background: black;
-  border: 1px solid #fff;
+.work .carousel .carousel-image {
   position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  border-radius: 5px;
 }
 
-.work .carousel .image-placeholder.image-1 {
+.work .carousel .carousel-image.image-1 {
   width: 40%;
   height: calc((0.4 * 50vw) / 1.5);
   top: 30%;
@@ -228,49 +256,102 @@ body {
   z-index: 2;
 }
 
-.work .carousel .image-placeholder.image-2, .work .carousel .image-placeholder.image-3 {
+.work .carousel .carousel-image.image-2, .work .carousel .carousel-image.image-6 {
   width: 30%;
   height: calc((0.3 * 50vw) / 1.5);
   top: 27.5%;
-  background: blue;
   opacity: .8;
   z-index: 1;
 }
 
-.work .carousel .image-placeholder.image-2.image-3, .work .carousel .image-placeholder.image-3.image-3 {
-  right: 20px;
+.work .carousel .carousel-image.image-2.image-6, .work .carousel .carousel-image.image-6.image-6 {
+  left: 67%;
 }
 
-.work .carousel .image-placeholder.image-2.image-2, .work .carousel .image-placeholder.image-3.image-2 {
+.work .carousel .carousel-image.image-2.image-2, .work .carousel .carousel-image.image-6.image-2 {
   left: 20px;
 }
 
-.work .carousel .image-placeholder.image-4, .work .carousel .image-placeholder.image-5 {
+.work .carousel .carousel-image.image-3, .work .carousel .carousel-image.image-5 {
   width: 15%;
   height: calc((0.15 * 50vw) / 1.5);
   top: 22.5%;
   z-index: 0;
-  background: cyan;
   opacity: .6;
 }
 
-.work .carousel .image-placeholder.image-4.image-4, .work .carousel .image-placeholder.image-5.image-4 {
-  right: 25%;
+.work .carousel .carousel-image.image-3.image-5, .work .carousel .carousel-image.image-5.image-5 {
+  left: 60%;
 }
 
-.work .carousel .image-placeholder.image-4.image-5, .work .carousel .image-placeholder.image-5.image-5 {
+.work .carousel .carousel-image.image-3.image-3, .work .carousel .carousel-image.image-5.image-3 {
   left: 25%;
 }
 
-.work .carousel .image-placeholder.image-6 {
+.work .carousel .carousel-image.image-4 {
   width: 8%;
   height: calc((0.08 * 50vw) / 1.5);
   top: 22.5%;
   z-index: 0;
-  background: lightblue;
   opacity: .4;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+}
+
+.work .btn {
+  position: relative;
+  left: calc(50% - 60px);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.about-section {
+  height: 92vh;
+  overflow-y: hidden;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 3fr;
+      grid-template-columns: 2fr 3fr;
+}
+
+.about-section .text-section {
+  width: 100%;
+  height: 100%;
+  background: url("../img/pattern-bg.png") center/cover no-repeat;
+}
+
+.about-section .text-section .title {
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 25%;
+}
+
+.about-section .text-section .title .primary {
+  color: #4793A3;
+}
+
+.about-section .text-section .text {
+  width: 47.5%;
+  text-align: center;
+  margin: 2em auto 3em auto;
+  line-height: 1.5;
+  color: #4d4d4d;
+  font-weight: lighter;
+}
+
+.about-section .text-section .btn {
+  position: relative;
+  left: calc(50% - 65px);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.about-section .image-section .logo {
+  width: 100%;
+  position: relative;
+  top: -200px;
 }
 /*# sourceMappingURL=main.css.map */
