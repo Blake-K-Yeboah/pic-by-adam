@@ -230,67 +230,26 @@ html {
     }
 
     .carousel {
-        width: 50vw;
+        width: 80vw;
         position:relative;
-        margin: 1.5em auto 0 auto;
-        height: 50vh;
+        margin: 3em auto 0 auto;
+        height: 40vh;
+        display:flex;
 
         .carousel-image {
-            position:absolute;
-            object-fit: cover;
-            object-position: 50% 50%;
-            transition: 1s ease-in-out;
-            border-radius: 5px;
-
-            &.image-1 {
-                width: 40%;
-                height: calc((0.4 * 50vw) / 1.5);
-                top: 30%;
-                left:50%;
-                transform:translateX(-50%);
-                z-index: 2;
+            transition: .5s ease-in-out;
+            position: relative;
+            width: calc(0.25 * 50vw);
+            height: calc((0.25 * 50vw) * 1.25);
+            
+            &:not(:first-of-type) {
+                margin-left: 1.2em;
             }
 
-            &.image-2, &.image-6 {
-                width: 30%;
-                height: calc((0.3 * 50vw) / 1.5);
-                top: 27.5%;
-                opacity: .8;
-                z-index: 1;
-
-                &.image-6 {
-                    left: 67%;
-                }
-
-                &.image-2 {
-                    left: 20px;
-                }
-            }
-
-            &.image-3, &.image-5 {
-                width: 15%;
-                height: calc((0.15 * 50vw) / 1.5);
-                top: 22.5%;
-                z-index: 0;
-                opacity: .6;
-                
-                &.image-5 {
-                    left: 60%;
-                }
-
-                &.image-3 {
-                    left: 25%;
-                }
-            }
-
-            &.image-4 {
-                width: 8%;
-                height: calc((0.08 * 50vw) / 1.5);
-                top: 22.5%;
-                z-index: 0;
-                opacity: .4;
-                left:50%;
-                transform:translateX(-50%);
+            &:hover {
+                width: calc(0.3 * 50vw);
+                height: calc((0.3 * 50vw) * 1.25);
+                margin-top: -25px;
             }
         }
     }
