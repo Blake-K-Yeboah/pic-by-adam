@@ -193,6 +193,10 @@ html {
   padding: 12px 28px;
 }
 
+.btn.primary-filled:hover {
+  background: #62abbb;
+}
+
 .work {
   background: url("../img/our-work-bg.png") center/cover no-repeat fixed;
   width: 100vw;
@@ -353,5 +357,52 @@ html {
   width: 100%;
   position: relative;
   top: -200px;
+}
+
+.contact-section {
+  background: url("../img/our-work-bg.png") center/cover no-repeat fixed;
+  width: 100vw;
+  padding: 6em 0;
+}
+
+.contact-section .title {
+  color: #fff;
+  text-align: center;
+  font-size: 2.25rem;
+  margin-bottom: 1em;
+}
+
+.contact-section .contact-form {
+  width: 30vw;
+  margin: 0 auto;
+}
+
+.contact-section .contact-form .form-group {
+  width: 100%;
+  margin: 1.25em 0;
+}
+
+.contact-section .contact-form .form-group.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 1.25em;
+          column-gap: 1.25em;
+}
+
+.contact-section .contact-form .form-group .input {
+  width: 100%;
+  min-height: 45px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-section .contact-form .form-group .btn {
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=main.css.map */
