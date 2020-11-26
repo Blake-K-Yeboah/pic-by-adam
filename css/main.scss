@@ -477,3 +477,71 @@ html {
         }
     }
 }
+
+//////// HEADER (ABOUT) STYLES ////////
+
+.about-header {
+    height: 50vh;
+    margin-top: 80px;
+    background: url('../img/BG.png') center/cover no-repeat fixed;
+    position: relative;
+
+    .page-title {
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 3.5rem;
+        color: #fff;
+        letter-spacing: -3px;
+        position:absolute;
+        left: calc(50% + 100px);
+        top:50%;
+        transform: scale(1.2, 1.25) translate(-50%, -50%);
+    }
+}
+
+//////// ABOUT SECTION (ABOUT) STYLES ////////
+
+.introduction {
+    padding: 6em 20vw 0 20vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 80vh;
+    background: url('../img/pattern-bg.png') center/cover no-repeat;
+    position:relative;
+    overflow: hidden;
+
+    .text-section {
+        width: 100%;
+        margin: 10vh 0 0 5vw;
+
+        .title {
+            color: $darkGrey;
+            font-size: 2rem;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: -1px;
+            margin-bottom: 1em;
+
+            .primary {
+                color: $primary;
+            }
+        }
+
+        .about-text {
+            width:80%;
+            text-align:left;
+            line-height: 1.75;
+            color: lighten($darkGrey, 10%);
+            font-weight: lighter;
+            margin-bottom: 2.5em;
+        }
+
+        .btn {
+            padding: 12px 72px;
+        }
+    }
+
+    .adam-img {
+        width: 95%;
+    }
+}

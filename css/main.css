@@ -488,4 +488,71 @@ html {
 .large-footer .footer-small-section .icon-list .icon-container .icon:hover {
   background: #ddd;
 }
+
+.about-header {
+  height: 50vh;
+  margin-top: 80px;
+  background: url("../img/BG.png") center/cover no-repeat fixed;
+  position: relative;
+}
+
+.about-header .page-title {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3.5rem;
+  color: #fff;
+  letter-spacing: -3px;
+  position: absolute;
+  left: calc(50% + 100px);
+  top: 50%;
+  -webkit-transform: scale(1.2, 1.25) translate(-50%, -50%);
+          transform: scale(1.2, 1.25) translate(-50%, -50%);
+}
+
+.introduction {
+  padding: 6em 20vw 0 20vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  height: 80vh;
+  background: url("../img/pattern-bg.png") center/cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.introduction .text-section {
+  width: 100%;
+  margin: 10vh 0 0 5vw;
+}
+
+.introduction .text-section .title {
+  color: #333333;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 1em;
+}
+
+.introduction .text-section .title .primary {
+  color: #4793A3;
+}
+
+.introduction .text-section .about-text {
+  width: 80%;
+  text-align: left;
+  line-height: 1.75;
+  color: #4d4d4d;
+  font-weight: lighter;
+  margin-bottom: 2.5em;
+}
+
+.introduction .text-section .btn {
+  padding: 12px 72px;
+}
+
+.introduction .adam-img {
+  width: 95%;
+}
 /*# sourceMappingURL=main.css.map */
