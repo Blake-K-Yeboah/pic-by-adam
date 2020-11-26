@@ -290,7 +290,7 @@ html {
             width:47.5%;
             text-align:center;
             margin: 2em auto 3em auto;
-            line-height: 1.5;
+            line-height: 1.75;
             color: lighten($darkGrey, 10%);
             font-weight: lighter;
         }
@@ -353,6 +353,126 @@ html {
                 position:relative;
                 left:50%;
                 transform:translateX(-50%);
+            }
+        }
+    }
+}
+
+//////// FOOTER STYLES ////////
+
+.large-footer {
+    background: $darkGrey;
+    padding: 10vh 20vw 0 20vw;
+
+    .footer-grid {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 10vh;
+
+        .email-section {
+
+            .heading {
+                color: #fff;
+                font-size: 1.25rem;
+                letter-spacing: -1px;
+            }
+
+            .text {
+                color: #aaa;
+                font-size: .75rem;
+                width: 60%;
+                margin: 2em 0;
+
+                .white {
+                    color: #fff;
+                }
+            }
+
+            .email-input {
+                width: 200px;
+                height: 30px;
+                background: transparent;
+                border: 1px solid #aaa;
+                padding-left: 12px;
+            }
+
+            .email-btn {
+                width: 75px;
+                color: #fff;
+                background: $primary;
+                height: 30px;
+                border: 1px solid $primary;
+                text-transform:uppercase;
+                cursor: pointer;
+                transition: .3s ease-in-out;
+                
+                &:hover {
+                    background: lighten($primary, 10%);
+                }
+            }
+        }
+
+        .lists-section {
+            display:grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            .list-container {
+
+                .heading {
+                    color: #fff;
+                    font-size: 1rem;
+                    letter-spacing: -0.05px;
+                    margin-bottom: 12px;
+                }
+
+                .list {
+                    list-style: none;
+
+                    .list-item {
+                        margin-bottom: 12px;
+
+                        .list-link {
+                            color: #aaa;
+                            font-size: .75rem;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-small-section {
+        display:flex;
+        justify-content: space-between;
+        height: 100px;
+        align-items: center;
+        border-top: 2px solid #444;
+
+        .copyright, .affiliate-disclosure {
+            color: #aaa;
+            font-size: 0.85rem;
+        }
+
+        .icon-list {
+            display:flex;
+            list-style: none;
+
+            .icon-container {
+                margin: .75em;
+
+                .icon {
+                    background: #bbb;
+                    padding: 12px;
+                    border-radius: 50%;
+                    color: $darkGrey;
+                    text-decoration: none;
+                    transition: .3s ease-in-out;
+
+                    &:hover {
+                        background: #ddd;
+                    }
+                }
             }
         }
     }
