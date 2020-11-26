@@ -555,4 +555,83 @@ html {
 .introduction .adam-img {
   width: 95%;
 }
+
+.get-in-touch {
+  height: 80vh;
+  background: url("../img/BG 2.png") center/cover no-repeat fixed;
+  padding: 10vh 0;
+}
+
+.get-in-touch .title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 5px;
+  margin-bottom: 7vh;
+}
+
+.get-in-touch .grid {
+  background: #fff;
+  width: 50vw;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  height: 60%;
+}
+
+.get-in-touch .grid .box {
+  width: 100%;
+  color: #fff;
+  position: relative;
+}
+
+.get-in-touch .grid .box .icon {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 3rem;
+}
+
+.get-in-touch .grid .box .text {
+  font-style: italic;
+  font-size: 1.15rem;
+  position: absolute;
+  top: 60%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  left: 50%;
+  min-width: 200px;
+  text-align: center;
+}
+
+.get-in-touch .grid .box .text .link {
+  color: #fff;
+}
+
+.get-in-touch .grid .box.one {
+  background: #eee;
+  color: #333333;
+}
+
+.get-in-touch .grid .box.two {
+  background: url("../img/box-bg.jpg") center/cover no-repeat;
+}
+
+.get-in-touch .grid .box.three {
+  background: url("../img/box-bg-2.jpg") center/cover no-repeat;
+}
+
+.get-in-touch .btn {
+  position: relative;
+  left: 50%;
+  top: 7vh;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
 /*# sourceMappingURL=main.css.map */

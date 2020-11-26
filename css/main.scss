@@ -545,3 +545,79 @@ html {
         width: 95%;
     }
 }
+
+//////// GET IN TOUCH SECTION (ABOUT) STYLES ////////
+
+.get-in-touch {
+    height: 80vh;
+    background: url('../img/BG 2.png') center/cover no-repeat fixed;
+    padding: 10vh 0;
+
+    .title {
+        color: #fff;
+        text-transform:uppercase;
+        font-weight: 700;
+        font-size: 3rem;
+        text-align:center;
+        letter-spacing: 5px;
+        margin-bottom: 7vh;
+    }
+
+    .grid {
+        background: #fff;
+        width: 50vw;
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 auto;
+        height: 60%;
+
+        .box {
+            width: 100%;
+            color: #fff;
+            position:relative;
+
+            .icon {
+                position:absolute;
+                top:40%;
+                left:50%;
+                transform:translate(-50%, -50%);
+                font-size: 3rem;
+            }
+
+            .text {
+                font-style: italic;
+                font-size: 1.15rem;
+                position:absolute;
+                top:60%;
+                transform:translate(-50%, -50%);
+                left:50%;
+                min-width: 200px;
+                text-align:center;
+
+                .link {
+                    color: #fff;
+                }
+            }
+
+            &.one {
+                background: #eee;
+                color: $darkGrey;
+            }
+
+            &.two {
+                background: url('../img/box-bg.jpg') center/cover no-repeat;
+            }
+
+            &.three {
+                background: url('../img/box-bg-2.jpg') center/cover no-repeat;
+            }
+        }
+    }
+
+    .btn {
+        position:relative;
+        left:50%;
+        top: 7vh;
+        transform: translateX(-50%);
+    }
+}
