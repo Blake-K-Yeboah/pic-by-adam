@@ -675,9 +675,14 @@ html {
   bottom: -50px;
 }
 
+.header-w-divider .header-img.lens {
+  width: 100px;
+  bottom: -75px;
+}
+
 .services-section {
   padding: 15vh 10vw;
-  background: url("../img/2.png") center/cover no-repeat fixed;
+  background: url("../img/setup-background.jpg") center/cover no-repeat fixed;
   width: 100vw;
 }
 
@@ -729,5 +734,46 @@ html {
   left: 50%;
   width: 200px;
   margin-left: -70px;
+}
+
+.latest-work-section {
+  background: url("../img/pattern-bg.png") center/cover no-repeat fixed;
+  padding: 15vh 5vw;
+}
+
+.latest-work-section .content .title {
+  color: #333333;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.latest-work-section .content .desc {
+  font-size: .85rem;
+  color: #4d4d4d;
+  width: 29%;
+  text-align: center;
+  margin: 1em auto;
+  line-height: 1.5em;
+}
+
+.latest-work-section .content .btn {
+  position: relative;
+  left: calc(50% - 70px);
+  top: 1.5em;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.latest-work-section .work-grid {
+  margin-top: 5em;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  gap: 1.5em;
+}
+
+.latest-work-section .work-grid .work-img {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */

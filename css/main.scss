@@ -658,6 +658,11 @@ html {
         left:50%;
         transform:translateX(-50%);
         bottom: -50px;
+
+        &.lens {
+            width: 100px;
+            bottom: -75px;
+        }
     }
 }
 
@@ -665,7 +670,7 @@ html {
 
 .services-section {
     padding: 15vh 10vw;
-    background: url('../img/2.png') center/cover no-repeat fixed;
+    background: url('../img/setup-background.jpg') center/cover no-repeat fixed;
     width: 100vw;
 
     .grid {
@@ -713,5 +718,48 @@ html {
         left: 50%;
         width: 200px;
         margin-left: -70px;
+    }
+}
+
+//////// LATEST WORK SECTION (PORTFOLIO) STYLES ////////
+
+.latest-work-section {
+    background: url('../img/pattern-bg.png') center/cover no-repeat fixed;
+    padding: 15vh 5vw;
+
+    .content {
+
+        .title {
+            color: $darkGrey;
+            text-align:center;
+            font-size: 2rem;
+        }
+
+        .desc {
+            font-size: .85rem;
+            color: lighten($darkGrey, 10%);
+            width: 29%;
+            text-align:center;
+            margin: 1em auto;
+            line-height: 1.5em;
+        }
+
+        .btn {
+            position:relative;
+            left: calc(50% - 70px);
+            top: 1.5em;
+            transform:translateX(-50%);
+        }
+    }
+
+    .work-grid {
+        margin-top: 5em;
+        display:grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5em;
+        
+        .work-img {
+            width: 100%;
+        }
     }
 }
