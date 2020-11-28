@@ -641,6 +641,7 @@ html {
         left: calc(50% + 100px);
         top:40%;
         transform: scale(1.2, 1.25) translate(-50%, -50%);
+        text-align:center;
     }
 
     .divider {
@@ -662,6 +663,16 @@ html {
         &.lens {
             width: 100px;
             bottom: -75px;
+        }
+
+        &.mac {
+            width: 175px;
+        }
+    }
+
+    &.faq {
+        .divider {
+            top: 65%;
         }
     }
 }
@@ -762,4 +773,44 @@ html {
             width: 100%;
         }
     }
+}
+
+//////// FAQ SECTION (FAQ) STYLES ////////
+
+.faq-section {
+    background: url('../img/pattern-bg.png') center/cover no-repeat fixed;
+    padding: 15vh 25vw;
+
+    .question-title {
+        color: rgba($darkGrey, 0.75);
+        font-size: 2rem;
+        background: rgba(175,175,175,0.65);
+        padding: .5em 1em;
+        margin-bottom: 1em;
+
+        span {
+            font-weight: normal;
+        }
+    }
+
+    .question-content {
+        color: lighten($darkGrey, 25%);
+        font-size: 1.5rem;
+        padding-left: 1em;
+        width: 95%;
+        line-height: 1.25;
+        margin-bottom: 3em;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+
+    .btn {
+        position:relative;
+        top: 5em;
+        left: calc(50% - 70px);
+        transform: translateX(-50%);
+    }
+
 }

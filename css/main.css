@@ -654,6 +654,7 @@ html {
   top: 40%;
   -webkit-transform: scale(1.2, 1.25) translate(-50%, -50%);
           transform: scale(1.2, 1.25) translate(-50%, -50%);
+  text-align: center;
 }
 
 .header-w-divider .divider {
@@ -678,6 +679,14 @@ html {
 .header-w-divider .header-img.lens {
   width: 100px;
   bottom: -75px;
+}
+
+.header-w-divider .header-img.mac {
+  width: 175px;
+}
+
+.header-w-divider.faq .divider {
+  top: 65%;
 }
 
 .services-section {
@@ -775,5 +784,43 @@ html {
 
 .latest-work-section .work-grid .work-img {
   width: 100%;
+}
+
+.faq-section {
+  background: url("../img/pattern-bg.png") center/cover no-repeat fixed;
+  padding: 15vh 25vw;
+}
+
+.faq-section .question-title {
+  color: rgba(51, 51, 51, 0.75);
+  font-size: 2rem;
+  background: rgba(175, 175, 175, 0.65);
+  padding: .5em 1em;
+  margin-bottom: 1em;
+}
+
+.faq-section .question-title span {
+  font-weight: normal;
+}
+
+.faq-section .question-content {
+  color: #737373;
+  font-size: 1.5rem;
+  padding-left: 1em;
+  width: 95%;
+  line-height: 1.25;
+  margin-bottom: 3em;
+}
+
+.faq-section .question-content:last-of-type {
+  margin-bottom: 0;
+}
+
+.faq-section .btn {
+  position: relative;
+  top: 5em;
+  left: calc(50% - 70px);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /*# sourceMappingURL=main.css.map */
