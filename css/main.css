@@ -784,6 +784,37 @@ html {
 
 .latest-work-section .work-grid .work-img {
   width: 100%;
+  cursor: pointer;
+}
+
+.latest-work-section .work-grid .work-img:hover {
+  opacity: .75;
+}
+
+.latest-work-section .work-grid .work-img.active {
+  width: 30vw;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -45%);
+          transform: translate(-50%, -45%);
+  cursor: default;
+  z-index: 4;
+}
+
+.latest-work-section .work-grid .work-img.active:hover {
+  opacity: 1;
+}
+
+.latest-work-section .overlay {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: none;
 }
 
 .faq-section {

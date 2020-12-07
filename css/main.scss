@@ -771,7 +771,37 @@ html {
         
         .work-img {
             width: 100%;
+            cursor: pointer;
+
+            &:hover {
+                opacity: .75;
+            }
+
+            &.active {
+                width: 30vw;
+                position: fixed;
+                left:50%;
+                top:50%;
+                transform:translate(-50%, -45%);
+                cursor: default;
+                z-index: 4;
+
+                &:hover {
+                    opacity: 1;
+                }
+            }
         }
+    }
+
+    .overlay {
+        width:100vw;
+        height: 100vh;
+        background: rgba(0,0,0,0.75);
+        position: fixed;
+        top:0;
+        left:0;
+        z-index: 3;
+        display: none;
     }
 }
 
