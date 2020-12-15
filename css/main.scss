@@ -10,12 +10,27 @@ $primary: #4793A3;
 
 body {
     font-family: Helvetica, Arial, sans-serif;
-    background: $primary;
+    background: #fff;
     overflow-x: hidden;
 }
 
 html {
     scroll-behavior: smooth;
+}
+
+// ANIMATIONS
+@keyframes sweep {
+
+    from {
+        opacity: 0;
+        margin-top: -10px;
+    }
+
+    to {
+        opacity: 1;
+        margin-top: 0;
+    }
+
 }
 
 //////// SCROLLBAR STYLES ////////
@@ -154,7 +169,7 @@ html {
     padding: 8px 24px;
     border-radius: 20px;
     text-decoration: none;
-    transition: .33s ease-in-out;
+    transition: background .33s ease-in-out, color .33s ease-in-out;
     border: 2px solid;
     text-transform: uppercase;
     font-weight: bold;
@@ -819,6 +834,7 @@ html {
         margin-bottom: 1em;
         cursor: pointer;
         transition: .3s ease-in-out;
+        outline: none;
 
         &:hover {
             background: rgba(175,175,175,0.65);
@@ -854,4 +870,8 @@ html {
         transform: translateX(-50%);
     }
 
+    details[open] summary ~ * {
+        animation: sweep .4s ease-in-out;
+    }
 }
+
