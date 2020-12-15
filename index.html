@@ -71,13 +71,13 @@
 
         <div class="text-container">
 
-            <h2 class="small-heading"><span class="blue">Elevate</span> Your <span class="blue">Business</span> With</h2>
+            <h2 class="small-heading anim1"><span class="blue">Elevate</span> Your <span class="blue">Business</span> With</h2>
 
-            <h1 class="big-heading">Photos that</h1>
+            <h1 class="big-heading anim1">Photos that</h1>
 
-            <h1 class="big-heading primary">Matter</h1>
+            <h1 class="big-heading primary anim1">Matter</h1>
 
-            <a href="#work" class="btn primary">Learn More</a>
+            <a href="#work" class="btn primary anim1">Learn More</a>
 
         </div>
 
@@ -318,7 +318,19 @@
 
     </footer>
 
-    <script src="./js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
+
+    <script>
+
+        // Animation
+        gsap.from(".navbar", { opacity: 0, duration: .5, y: -50 })
+        gsap.from(".anim1", { opacity: 0, duration: 1, stagger: 0.5, y: -30, delay: .75 });
+        gsap.from(".camera", { opacity: 0, duration: 1, y: 50, delay: .75 });
+        gsap.from(".work-heading", { opacity: 0, duration: 1, y: 50, delay: 1.25 });
+        gsap.from(".divider", { opacity: 0, duration: 1, y: 50, delay: 1.25 });
+
+
+    </script>
 
 </body>
 </html>
