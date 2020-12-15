@@ -1,4 +1,3 @@
-
 window.addEventListener('load', () => {
 
     const workImages = document.querySelectorAll('.work-img');
