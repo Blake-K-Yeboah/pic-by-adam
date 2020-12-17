@@ -318,9 +318,12 @@ html {
     }
 
     .image-section {
-    
+        height: 100%;
+        width: 100%;
+
         .logo {
             width: 100%;
+            height: 100%;
             position: relative;
             top: -200px;
         }
@@ -971,5 +974,89 @@ html {
         position:absolute;
         left:50%;
         transform:translateX(-50%);
+    }
+}
+
+// Reponsive Media Queries
+@media screen and (max-width:1392px) {
+
+    .home-header {
+
+        .text-container {
+            height: 45vh;
+
+            .small-heading {
+                font-size: 1.1rem;
+            }
+
+            .big-heading {
+                font-size: 5rem;
+            }
+        }
+
+    }
+
+    .work {
+
+        .work-heading {
+            font-size: 1.65rem;
+        }
+
+        .text {
+            font-size: 1rem;
+        }
+
+        .carousel {
+            width: 90vw;
+
+            .carousel-image {
+                width: calc(0.275 * 50vw);
+                height: calc((0.275 * 50vw) * 1.25);
+            }
+        }
+
+    }
+
+    .about-section {
+        grid-template-columns: 4fr 5fr;
+        height: 80vh;
+
+        .text-section {
+
+            .title {
+                margin-top: 15%;
+                font-size: 2.75rem;
+            }
+
+            .text {
+                font-size: .9rem;
+            }
+
+        }
+    }
+
+    .contact-section {
+
+        .contact-form {
+            width: 45vw;
+        }
+
+    }
+
+    .large-footer {
+        padding: 10vh 12.5vw 0 12.5vw;
+    }
+}
+
+@media screen and (max-width: 1272px) {
+
+    .about-section {
+        grid-template-columns: 1fr 1fr;
+
+        .image-section {
+            .logo {
+                top: 0;
+            }
+        }
     }
 }
