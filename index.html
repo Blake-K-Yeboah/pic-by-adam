@@ -56,17 +56,64 @@
                 <a href="/testimonials" class="nav-link">Testimonials</a>
             
             </li>
+
+        </ul>
+
+        <i class="fas fa-bars menu-icon" id="menu-icon"></i>
+
+    </nav>
+
+    <section class="mobile-menu">
+
+        <span class="close-icon" id="close-icon">&times;</span>
+
+        <ul class="nav-list">
+
+            <li class="nav-item">
+
+                <a href="/" class="nav-link active">Home</a>
+
+            </li>
+
+            <li class="nav-item">
+
+                <a href="/about" class="nav-link">About Us</a>
+
+            </li>
+
+            <li class="nav-item">
+            
+                <a href="/services" class="nav-link">Services</a>
+            
+            </li>
             
             <li class="nav-item">
             
-                <a href="#" class="nav-link">Blog</a>
+                <a href="/portfolio" class="nav-link">Portfolio</a>
+            
+            </li>
+            
+            <li class="nav-item">
+            
+                <a href="/#contact" class="nav-link">Contact</a>
+            
+            </li>
+            
+            <li class="nav-item">
+            
+                <a href="/faq" class="nav-link">FAQ</a>
+            </li>
+            
+            <li class="nav-item">
+            
+                <a href="/testimonials" class="nav-link">Testimonials</a>
             
             </li>
 
         </ul>
 
-    </nav>
-
+    </section>
+    
     <header class="home-header">
 
         <div class="text-container">
@@ -322,7 +369,7 @@
 
     <script>
 
-        /* Animation
+        /* Load In Animation
         gsap.from(".navbar", { opacity: 0, duration: .5, y: -50 })
         gsap.from(".anim1", { opacity: 0, duration: 1, stagger: 0.3, y: -30, delay: .75 });
         gsap.from(".camera", { opacity: 0, duration: 1, y: 50, delay: .75 });
@@ -330,6 +377,17 @@
         gsap.from(".divider", { opacity: 0, duration: 1, y: 50, delay: 1.25 });
         
         */
+
+        // Mobile Navigation
+        document.getElementById("menu-icon").addEventListener('click', () => {
+            document.querySelector('.mobile-menu').style.display = "block";
+            gsap.from('.mobile-menu', { opacity: 0, duration: 1.5 });
+            gsap.from('.mobile-menu .nav-item', { x: 50, duration: 1, opacity: 0, stagger: 0.25 });
+        });
+
+        document.getElementById("close-icon").addEventListener('click', () => {
+            document.querySelector('.mobile-menu').style.display = "none";            
+        });
 
     </script>
 
