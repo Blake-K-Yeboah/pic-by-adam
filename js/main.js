@@ -1,18 +1,10 @@
-window.addEventListener('load', () => {
+// Mobile Navigation
+document.getElementById("menu-icon").addEventListener('click', () => {
+    document.querySelector('.mobile-menu').style.display = "block";
+    gsap.from('.mobile-menu', { opacity: 0, duration: 1.5 });
+    gsap.from('.mobile-menu .nav-item', { x: 50, duration: 1, opacity: 0, stagger: 0.25 });
+});
 
-    const workImages = document.querySelectorAll('.work-img');
-    const overlay = document.querySelector('#overlay');
-
-    workImages.forEach(image => {
-        image.addEventListener('click', () => {
-            image.classList.add('active');
-            overlay.style.display = "block";
-        });
-    });
-
-    overlay.addEventListener('click', () => {
-        document.querySelector('.work-img.active').classList.remove('active');
-        overlay.style.display = "none";
-    });
-
-})
+document.getElementById("close-icon").addEventListener('click', () => {
+    document.querySelector('.mobile-menu').style.display = "none";            
+});
