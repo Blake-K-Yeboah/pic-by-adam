@@ -101,8 +101,62 @@ html {
             }
         }
     }
+
+    .menu-icon {
+        color: $darkGrey;
+        line-height: 80px;
+        cursor: pointer;
+        font-size: 1.25rem;
+        display: none;
+    }
 }
 
+//////// MOBILE MENU STYLES ////////
+
+.mobile-menu {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(255,255,255, 0.95);
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 5;
+    display:none;
+
+    .close-icon {
+        color: $darkGrey;
+        font-size: 2rem;
+        position:absolute;
+        right: 5vw;
+        top: 6vh;
+    }
+
+    .nav-list {
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        list-style: none;
+
+        .nav-item {
+            margin: 1em 0;
+
+            .nav-link {
+                text-transform:uppercase;
+                color: $darkGrey;
+                text-decoration: none;
+                font-weight: bold;
+                letter-spacing: 0.5px;
+                cursor: pointer;
+
+                &.active {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
 //////// HEADER (HOME) STYLES ////////
 
 .home-header {
@@ -1110,6 +1164,26 @@ html {
                 position:absolute;
                 bottom: 1em;
             }
+        }
+    }
+
+    .contact-section {
+        .contact-form {
+            width: 60vw;
+        }
+    }
+}
+
+@media screen and (max-width:1040px) {
+
+    .navbar {
+
+        .nav-list {
+            display:none;
+        }
+
+        .menu-icon {
+            display: block;
         }
     }
 }

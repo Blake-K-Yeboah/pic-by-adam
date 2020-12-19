@@ -113,6 +113,68 @@ html {
   cursor: default;
 }
 
+.navbar .menu-icon {
+  color: #333333;
+  line-height: 80px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  display: none;
+}
+
+.mobile-menu {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.95);
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  display: none;
+}
+
+.mobile-menu .close-icon {
+  color: #333333;
+  font-size: 2rem;
+  position: absolute;
+  right: 5vw;
+  top: 6vh;
+}
+
+.mobile-menu .nav-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  list-style: none;
+}
+
+.mobile-menu .nav-list .nav-item {
+  margin: 1em 0;
+}
+
+.mobile-menu .nav-list .nav-item .nav-link {
+  text-transform: uppercase;
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.mobile-menu .nav-list .nav-item .nav-link.active {
+  color: #4793A3;
+}
+
 .home-header {
   height: 70vh;
   margin-top: 80px;
@@ -1095,6 +1157,18 @@ html {
   .work .carousel .btn {
     position: absolute;
     bottom: 1em;
+  }
+  .contact-section .contact-form {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .navbar .nav-list {
+    display: none;
+  }
+  .navbar .menu-icon {
+    display: block;
   }
 }
 /*# sourceMappingURL=main.css.map */
