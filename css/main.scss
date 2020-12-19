@@ -1060,3 +1060,56 @@ html {
         }
     }
 }
+
+@media screen and (max-width: 1148px) {
+
+    .home-header {
+
+        .text-container {
+            height: 40vh;
+
+            .small-heading {
+                font-size: 1rem;
+            }
+
+            .big-heading {
+                font-size: 4rem;
+            }
+        }
+
+    }
+
+
+    .work {
+
+        .carousel {
+            flex-wrap: wrap;
+            width: 73vw;
+            height: 90vh;
+
+            .carousel-image {
+                width: calc(0.45 * 50vw);
+                height: calc((0.45 * 50vw) * 1.25);
+
+                &:nth-child(n+4) {
+                    margin-top: -3em;
+                }
+
+                &:nth-child(4) {
+                    margin-left: 0;
+                }
+
+                &:hover {
+                    width: calc(0.475 * 50vw);
+                    height: calc((0.475 * 50vw) * 1.25);
+                    margin-top: 0;
+                }
+            }
+
+            .btn {
+                position:absolute;
+                bottom: 1em;
+            }
+        }
+    }
+}

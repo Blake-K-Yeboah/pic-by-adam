@@ -1060,4 +1060,41 @@ html {
     top: 0;
   }
 }
+
+@media screen and (max-width: 1148px) {
+  .home-header .text-container {
+    height: 40vh;
+  }
+  .home-header .text-container .small-heading {
+    font-size: 1rem;
+  }
+  .home-header .text-container .big-heading {
+    font-size: 4rem;
+  }
+  .work .carousel {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 73vw;
+    height: 90vh;
+  }
+  .work .carousel .carousel-image {
+    width: calc(0.45 * 50vw);
+    height: calc((0.45 * 50vw) * 1.25);
+  }
+  .work .carousel .carousel-image:nth-child(n+4) {
+    margin-top: -3em;
+  }
+  .work .carousel .carousel-image:nth-child(4) {
+    margin-left: 0;
+  }
+  .work .carousel .carousel-image:hover {
+    width: calc(0.475 * 50vw);
+    height: calc((0.475 * 50vw) * 1.25);
+    margin-top: 0;
+  }
+  .work .carousel .btn {
+    position: absolute;
+    bottom: 1em;
+  }
+}
 /*# sourceMappingURL=main.css.map */
