@@ -1066,6 +1066,11 @@ html {
             .carousel-image {
                 width: calc(0.275 * 50vw);
                 height: calc((0.275 * 50vw) * 1.25);
+
+                &:hover {
+                    width: calc(0.275 * 50vw);
+                    height: calc((0.275 * 50vw) * 1.25);
+                }
             }
         }
 
@@ -1154,8 +1159,8 @@ html {
                 }
 
                 &:hover {
-                    width: calc(0.475 * 50vw);
-                    height: calc((0.475 * 50vw) * 1.25);
+                    width: calc(0.45 * 50vw);
+                    height: calc((0.45 * 50vw) * 1.25);
                     margin-top: 0;
                 }
             }
@@ -1184,6 +1189,285 @@ html {
 
         .menu-icon {
             display: block;
+        }
+    }
+}
+
+@media screen and (max-width: 948px) {
+
+    .work {
+
+        .carousel {
+            height: 80vh;
+            width: 53vw;
+            min-width: 500px;
+
+            .carousel-image {
+                width: calc(0.5 * 50vw);
+                min-width: 236px;
+                height: calc((0.5 * 50vw) * 1.25);
+                min-height: 294px;
+
+                &:nth-child(n+5) {
+                    display:none;
+                }
+
+                &:nth-child(3) {
+                    margin-left:0;
+                }
+
+                &:nth-child(4) {
+                    margin-left: 1.2em;
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+    .about-section {
+        display:block;
+        height: 70vh;
+
+        .image-section {
+            display:none;
+        }
+
+        .text-section {
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .title {
+                margin: 0;
+            }
+
+            .btn {
+                position: relative;
+                left: 0;
+                transform: none;
+            }
+        }
+    }
+
+    .contact-section {
+
+        .contact-form {
+
+            .form-group.grid {
+                grid-template-columns: 1fr;
+
+                .input:nth-child(2) {
+                    margin-top: 1.25em;
+                }
+            }
+        }
+    }
+
+    .large-footer {
+        padding: 10vh 7.5vw 0 7.5vw;
+
+        .footer-small-section {
+
+            .icon-list {
+
+                .icon-container {
+
+                    .icon {
+                        padding: 8px;
+                        font-size: .85rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:884px) {
+
+    .home-header {
+
+        .text-container {
+
+            .small-heading {
+                font-size: 1rem;
+            }
+
+            .big-heading {
+                font-size: 3rem;
+                letter-spacing: -2.5px;
+                margin: .25em 0;
+            }
+        }
+    }
+
+    .large-footer {
+
+        .footer-grid {
+            grid-template-columns: 1fr;
+            margin-bottom: 10vh;
+            row-gap: 10vh;
+
+            .email-section {
+                text-align:center;
+
+                .text {
+                    margin: 2em auto;
+                    width: 50%;
+                    font-size: .8rem;
+                    line-height: 1.5;
+                }
+            }
+
+            .lists-section {
+                
+                .list-container {
+                    text-align:center;
+
+                    .heading {
+                        font-size: 1.15rem;
+                    }
+
+                    .list .list-item .list-link {
+                        font-size: .8rem;
+                    }
+                }
+            }
+        }
+
+        .footer-small-section {
+            flex-direction: column-reverse;
+            height: 250px;
+            padding: 50px 0;
+        }
+
+    }
+}
+
+@media screen and (max-width: 712px) {
+
+    .home-header {
+        min-height: 650px;
+
+        .text-container {
+            height: 50vh;
+
+            .small-heading {
+                font-size: 1.25rem;
+            }
+
+            .big-heading {
+                font-size: 4.5rem;
+                letter-spacing: -4px;
+                line-height: 1;
+
+                &.primary {
+                    margin-top: 40px;
+                }
+
+                &:first-of-type {
+                    margin-top: .5em;
+                }
+            }
+        }
+
+        .camera {
+            width: 20vw;
+        }
+    }
+
+    .work {
+
+        .work-heading {
+            width: 60vw;
+        }
+
+        .text {
+            width: 60vw;
+        }
+
+        .carousel {
+            min-width: 237px;
+            width: 237px;
+            height: 120vh;
+            min-height: 1000px;
+
+            .carousel-image {
+
+                &:nth-child(n+2) {
+                    margin: 0;
+                }
+
+                &:nth-child(4) {
+                    display:none;
+                }
+
+            }
+        }
+    }
+
+    .about-section {
+        min-height: 600px;
+    }
+
+    .large-footer {
+
+        .footer-grid {
+
+            .lists-section {
+                grid-template-columns: 1fr;
+                row-gap: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 548px) {
+
+    .navbar {
+        height: 100px;
+
+        .menu-icon {
+            line-height: 100px;
+        }
+    }
+
+    .home-header { 
+        min-height: 500px;
+        height: 50vh;
+
+        .text-container {
+            width: 80vw;
+            height: 30vh;
+
+            .small-heading {
+                font-size: 1rem;
+            }
+
+            .big-heading {
+                font-size: 3rem;
+                width: 100%;
+            }
+        }
+
+        .camera {
+            width: 22.5vw;
+            min-width: 105px;
+        }
+    }
+
+    .about-section {
+        min-height: 750px;
+        
+        .text-section {
+
+            .title {
+                font-size: 2rem;
+            }
+
+            .text {
+                font-size: .8rem;
+            }
         }
     }
 }
