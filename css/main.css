@@ -597,6 +597,7 @@ html {
   top: 50%;
   -webkit-transform: scale(1.2, 1.25) translate(-50%, -50%);
           transform: scale(1.2, 1.25) translate(-50%, -50%);
+  text-align: center;
 }
 
 .introduction {
