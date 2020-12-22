@@ -753,11 +753,11 @@ html {
   font-size: 3.25rem;
   color: #fff;
   letter-spacing: 2px;
-  position: absolute;
-  left: calc(50% + 100px);
+  position: relative;
+  left: 50%;
   top: 40%;
-  -webkit-transform: scale(1.2, 1.25) translate(-50%, -50%);
-          transform: scale(1.2, 1.25) translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -765,8 +765,8 @@ html {
   height: 3.5px;
   width: 200px;
   background: #fff;
-  position: absolute;
-  top: 60%;
+  position: relative;
+  top: 40%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
@@ -1159,6 +1159,12 @@ html {
   .about-section .image-section .logo {
     top: 0;
   }
+  .services-section .grid .service .service-title {
+    font-size: 1.25rem;
+  }
+  .services-section .grid .service .desc {
+    font-size: .85rem;
+  }
 }
 
 @media screen and (max-width: 1148px) {
@@ -1208,6 +1214,13 @@ html {
   .introduction .adam-img {
     width: 40%;
   }
+  .services-section {
+    padding: 15vh 5vw;
+  }
+  .services-section .grid {
+    -webkit-column-gap: 1.25em;
+            column-gap: 1.25em;
+  }
 }
 
 @media screen and (max-width: 1040px) {
@@ -1247,6 +1260,31 @@ html {
   }
   .get-in-touch .grid {
     width: 90vw;
+  }
+  .header-w-divider .page-title {
+    font-size: 3rem;
+  }
+  .services-section {
+    padding: 15vh 15vw;
+  }
+  .services-section .grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 4em;
+  }
+  .services-section .grid .service {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .latest-work-section .content .desc {
+    width: 50%;
+  }
+  .latest-work-section .work-grid {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+  }
+  .latest-work-section .work-grid .work-img.active {
+    width: 40vw;
   }
 }
 
@@ -1317,6 +1355,12 @@ html {
     padding: 8px;
     font-size: .85rem;
   }
+  .services-section {
+    padding: 15vh 10vw;
+  }
+  .services-section .grid {
+    gap: 2em;
+  }
 }
 
 @media screen and (max-width: 884px) {
@@ -1371,6 +1415,9 @@ html {
   }
   .get-in-touch .box {
     height: 30vh;
+  }
+  .header-w-divider .page-title {
+    font-size: 2.5rem;
   }
 }
 
@@ -1427,6 +1474,24 @@ html {
   .introduction {
     height: 100vh;
   }
+  .header-w-divider .page-title {
+    font-size: 2.75rem;
+    width: 75%;
+  }
+  .services-section .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .services-section .grid .service {
+    width: 60%;
+  }
+  .latest-work-section .work-grid {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .latest-work-section .work-grid .work-img.active {
+    width: 60vw;
+  }
 }
 
 @media screen and (max-width: 548px) {
@@ -1479,6 +1544,29 @@ html {
   }
   .get-in-touch .grid .box .text {
     font-size: 1rem;
+  }
+  .services-section {
+    padding: 15vh 15vw;
+  }
+  .services-section .grid .service {
+    width: 100%;
+  }
+  .header-w-divider {
+    height: 50vh;
+  }
+  .header-w-divider .divider {
+    top: 30%;
+  }
+  .latest-work-section {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+  .latest-work-section .content .desc {
+    width: 100%;
+  }
+  .latest-work-section .work-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 /*# sourceMappingURL=main.css.map */
