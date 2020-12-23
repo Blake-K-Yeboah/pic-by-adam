@@ -1,5 +1,5 @@
 # Website for PicByAdam
 
-This is a website for a business called PicByAdam
+This is a website for a business called PicByAdam that offers services like photography
 
-> THis project is currently being built
+> This project is currently being built.
