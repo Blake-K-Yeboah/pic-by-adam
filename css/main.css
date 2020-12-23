@@ -789,10 +789,6 @@ html {
   width: 175px;
 }
 
-.header-w-divider.faq .divider {
-  top: 65%;
-}
-
 .services-section {
   padding: 15vh 10vw;
   background: url("../img/setup-background.jpg") center/cover no-repeat fixed;
@@ -997,7 +993,6 @@ html {
 
 .testimonials-section .grid .testimonial-box {
   width: 100%;
-  height: 435px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1006,7 +1001,7 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 3.5em;
+  padding: 3.5em 0 7em 0;
 }
 
 .testimonials-section .grid .testimonial-box .name {
@@ -1149,6 +1144,12 @@ html {
   .get-in-touch .grid {
     width: 70vw;
   }
+  .faq-section {
+    padding: 15vh 20vw;
+  }
+  .testimonials-section {
+    padding: 10em 17.5vw 7.5em 17.5vw;
+  }
 }
 
 @media screen and (max-width: 1272px) {
@@ -1221,6 +1222,12 @@ html {
     -webkit-column-gap: 1.25em;
             column-gap: 1.25em;
   }
+  .faq-section {
+    padding: 15vh 10vw;
+  }
+  .testimonials-section {
+    padding: 10em 12.5vw 7.5em 12.5vw;
+  }
 }
 
 @media screen and (max-width: 1040px) {
@@ -1285,6 +1292,9 @@ html {
   }
   .latest-work-section .work-grid .work-img.active {
     width: 40vw;
+  }
+  .testimonials-section {
+    padding: 10em 5vw 7.5em 5vw;
   }
 }
 
@@ -1418,6 +1428,22 @@ html {
   }
   .header-w-divider .page-title {
     font-size: 2.5rem;
+  }
+  .faq-section .question-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .faq-section .question-content {
+    font-size: 1rem;
+  }
+  .testimonials-section .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    row-gap: 2em;
+  }
+  .testimonials-section .grid .testimonial-box {
+    width: 50%;
+    margin: 0 auto;
   }
 }
 
@@ -1557,6 +1583,9 @@ html {
   .header-w-divider .divider {
     top: 30%;
   }
+  .header-w-divider .page-title {
+    width: 100%;
+  }
   .latest-work-section {
     padding-left: 15vw;
     padding-right: 15vw;
@@ -1567,6 +1596,9 @@ html {
   .latest-work-section .work-grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .testimonials-section .grid .testimonial-box {
+    width: 75%;
   }
 }
 /*# sourceMappingURL=main.css.map */
