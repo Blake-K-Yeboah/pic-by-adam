@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -798,50 +799,59 @@ html {
 .services-section .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[4];
-      grid-template-columns: repeat(4, 1fr);
-  -webkit-column-gap: 1.6em;
-          column-gap: 1.6em;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 3em;
+  width: 80vw;
 }
 
-.services-section .grid .service {
+.services-section .grid .service-box {
+  width: 100%;
   background: #fff;
-  padding: 7.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 6px;
 }
 
-.services-section .grid .service .service-title {
-  text-transform: uppercase;
+.services-section .grid .service-box .service-img {
+  width: 30%;
+  height: 100%;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.services-section .grid .service-box .content {
+  padding: 1em;
+}
+
+.services-section .grid .service-box .content .service-heading {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 2.75rem;
   color: #333333;
-  letter-spacing: 2px;
-  font-size: 1.5rem;
-  text-align: center;
 }
 
-.services-section .grid .service .divider {
-  width: 100%;
-  height: 3px;
+.services-section .grid .service-box .content .divider {
+  height: 5px;
+  width: 75%;
   background: #4793A3;
-  margin: 5% 0;
+  margin-bottom: 1.5em;
 }
 
-.services-section .grid .service .desc {
-  width: 95%;
-  color: #4d4d4d;
-  line-height: 1.5;
-  margin-bottom: 5%;
-  text-align: center;
-}
-
-.services-section .grid .service .service-img {
-  width: 100%;
-  margin: 0 auto;
+.services-section .grid .service-box .content .service-text {
+  width: 90%;
+  font-size: 1rem;
+  line-height: 1.5em;
 }
 
 .services-section .btn {
   position: relative;
-  top: 5em;
+  top: 4em;
   left: 50%;
-  width: 200px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   margin-left: -70px;
 }
 
@@ -1160,12 +1170,6 @@ html {
   .about-section .image-section .logo {
     top: 0;
   }
-  .services-section .grid .service .service-title {
-    font-size: 1.25rem;
-  }
-  .services-section .grid .service .desc {
-    font-size: .85rem;
-  }
 }
 
 @media screen and (max-width: 1148px) {
@@ -1215,13 +1219,6 @@ html {
   .introduction .adam-img {
     width: 40%;
   }
-  .services-section {
-    padding: 15vh 5vw;
-  }
-  .services-section .grid {
-    -webkit-column-gap: 1.25em;
-            column-gap: 1.25em;
-  }
   .faq-section {
     padding: 15vh 10vw;
   }
@@ -1270,18 +1267,6 @@ html {
   }
   .header-w-divider .page-title {
     font-size: 3rem;
-  }
-  .services-section {
-    padding: 15vh 15vw;
-  }
-  .services-section .grid {
-    -ms-grid-columns: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-    gap: 4em;
-  }
-  .services-section .grid .service {
-    width: 100%;
-    margin: 0 auto;
   }
   .latest-work-section .content .desc {
     width: 50%;
@@ -1364,12 +1349,6 @@ html {
   .large-footer .footer-small-section .icon-list .icon-container .icon {
     padding: 8px;
     font-size: .85rem;
-  }
-  .services-section {
-    padding: 15vh 10vw;
-  }
-  .services-section .grid {
-    gap: 2em;
   }
 }
 
@@ -1504,13 +1483,6 @@ html {
     font-size: 2.75rem;
     width: 75%;
   }
-  .services-section .grid {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-  }
-  .services-section .grid .service {
-    width: 60%;
-  }
   .latest-work-section .work-grid {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
@@ -1570,12 +1542,6 @@ html {
   }
   .get-in-touch .grid .box .text {
     font-size: 1rem;
-  }
-  .services-section {
-    padding: 15vh 15vw;
-  }
-  .services-section .grid .service {
-    width: 100%;
   }
   .header-w-divider {
     height: 50vh;
