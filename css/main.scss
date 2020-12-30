@@ -753,8 +753,8 @@ html {
     }
 }
 
-//////// AFFILIATE DISCLOSURE SECTION STYLES ////////
-.affiliate-disclosure-section {
+//////// AFFILIATE DISCLOSURE SECTION AND COMING SOON SECTION STYLES ////////
+.affiliate-disclosure-section, .coming-soon-section {
     min-height: 70vh;
     background: url('../img/our-work-bg.png') center/cover no-repeat fixed;
     padding-top: 80px;
@@ -783,6 +783,35 @@ html {
         text-align:center;
         line-height: 1.25em;
     }
+}
+
+.coming-soon-section {
+    min-height: 80vh;
+
+    .email-form {
+        margin-top: 2em;
+        
+        .input {
+            padding: 12px 16px;
+            min-width: 30vw;
+
+            &::placeholder {
+                font-weight: bold;
+                color: $darkGrey;
+            }
+        }
+
+        .submit-btn {
+            padding: 11px 24px;
+            margin-left: -12px;
+            border: 2px solid #fff;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #fff;
+            background: $primary;
+        }
+    }
+
 }
 
 //////// SERVICES SECTION (SERVICES) STYLES ////////
@@ -1186,7 +1215,7 @@ html {
         padding: 10em 17.5vw 7.5em 17.5vw;
     }
 
-    .affiliate-disclosure-section {
+    .affiliate-disclosure-section, .coming-soon-section {
 
         .title {
             font-size: 2.5rem;
@@ -1719,7 +1748,7 @@ html {
         }
     }
 
-    .affiliate-disclosure-section {
+    .affiliate-disclosure-section, .coming-soon-section {
 
         .title {
             width: 75%;
@@ -1857,7 +1886,7 @@ html {
         }
     }
 
-    .affiliate-disclosure-section {
+    .affiliate-disclosure-section, .coming-soon-section {
         min-height: 85vh;
 
         .title {

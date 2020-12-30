@@ -790,7 +790,7 @@ html {
   width: 175px;
 }
 
-.affiliate-disclosure-section {
+.affiliate-disclosure-section, .coming-soon-section {
   min-height: 70vh;
   background: url("../img/our-work-bg.png") center/cover no-repeat fixed;
   padding-top: 80px;
@@ -809,7 +809,7 @@ html {
           flex-direction: column;
 }
 
-.affiliate-disclosure-section .title {
+.affiliate-disclosure-section .title, .coming-soon-section .title {
   color: #fff;
   text-transform: uppercase;
   font-weight: 900;
@@ -817,17 +817,60 @@ html {
   text-align: center;
 }
 
-.affiliate-disclosure-section .title span {
+.affiliate-disclosure-section .title span, .coming-soon-section .title span {
   color: #595959;
 }
 
-.affiliate-disclosure-section .text {
+.affiliate-disclosure-section .text, .coming-soon-section .text {
   color: #fff;
   font-size: 1rem;
   width: 27.5%;
   margin: 2em 0;
   text-align: center;
   line-height: 1.25em;
+}
+
+.coming-soon-section {
+  min-height: 80vh;
+}
+
+.coming-soon-section .email-form {
+  margin-top: 2em;
+}
+
+.coming-soon-section .email-form .input {
+  padding: 12px 16px;
+  min-width: 30vw;
+}
+
+.coming-soon-section .email-form .input::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #333333;
+}
+
+.coming-soon-section .email-form .input:-ms-input-placeholder {
+  font-weight: bold;
+  color: #333333;
+}
+
+.coming-soon-section .email-form .input::-ms-input-placeholder {
+  font-weight: bold;
+  color: #333333;
+}
+
+.coming-soon-section .email-form .input::placeholder {
+  font-weight: bold;
+  color: #333333;
+}
+
+.coming-soon-section .email-form .submit-btn {
+  padding: 11px 24px;
+  margin-left: -12px;
+  border: 2px solid #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background: #4793A3;
 }
 
 .services-section {
@@ -1200,10 +1243,10 @@ html {
   .testimonials-section {
     padding: 10em 17.5vw 7.5em 17.5vw;
   }
-  .affiliate-disclosure-section .title {
+  .affiliate-disclosure-section .title, .coming-soon-section .title {
     font-size: 2.5rem;
   }
-  .affiliate-disclosure-section .text {
+  .affiliate-disclosure-section .text, .coming-soon-section .text {
     width: 50%;
   }
   .services-section {
@@ -1562,10 +1605,10 @@ html {
   .latest-work-section .work-grid .work-img.active {
     width: 60vw;
   }
-  .affiliate-disclosure-section .title {
+  .affiliate-disclosure-section .title, .coming-soon-section .title {
     width: 75%;
   }
-  .affiliate-disclosure-section .text {
+  .affiliate-disclosure-section .text, .coming-soon-section .text {
     width: 65%;
   }
   .services-section {
@@ -1651,13 +1694,13 @@ html {
   .testimonials-section .grid .testimonial-box {
     width: 75%;
   }
-  .affiliate-disclosure-section {
+  .affiliate-disclosure-section, .coming-soon-section {
     min-height: 85vh;
   }
-  .affiliate-disclosure-section .title {
+  .affiliate-disclosure-section .title, .coming-soon-section .title {
     font-size: 2rem;
   }
-  .affiliate-disclosure-section .text {
+  .affiliate-disclosure-section .text, .coming-soon-section .text {
     font-size: .85rem;
     line-height: 1.5em;
     width: 75%;
