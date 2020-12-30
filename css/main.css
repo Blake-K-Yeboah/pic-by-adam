@@ -794,6 +794,19 @@ html {
   min-height: 70vh;
   background: url("../img/our-work-bg.png") center/cover no-repeat fixed;
   padding-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .affiliate-disclosure-section .title {
@@ -802,7 +815,6 @@ html {
   font-weight: 900;
   font-size: 4rem;
   text-align: center;
-  margin-top: 8.5%;
 }
 
 .affiliate-disclosure-section .title span {
@@ -813,7 +825,7 @@ html {
   color: #fff;
   font-size: 1rem;
   width: 27.5%;
-  margin: 2em auto;
+  margin: 2em 0;
   text-align: center;
   line-height: 1.25em;
 }
@@ -1188,6 +1200,12 @@ html {
   .testimonials-section {
     padding: 10em 17.5vw 7.5em 17.5vw;
   }
+  .affiliate-disclosure-section .title {
+    font-size: 2.5rem;
+  }
+  .affiliate-disclosure-section .text {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width: 1272px) {
@@ -1518,6 +1536,12 @@ html {
   .latest-work-section .work-grid .work-img.active {
     width: 60vw;
   }
+  .affiliate-disclosure-section .title {
+    width: 75%;
+  }
+  .affiliate-disclosure-section .text {
+    width: 65%;
+  }
 }
 
 @media screen and (max-width: 548px) {
@@ -1592,6 +1616,17 @@ html {
         grid-template-columns: 1fr;
   }
   .testimonials-section .grid .testimonial-box {
+    width: 75%;
+  }
+  .affiliate-disclosure-section {
+    min-height: 85vh;
+  }
+  .affiliate-disclosure-section .title {
+    font-size: 2rem;
+  }
+  .affiliate-disclosure-section .text {
+    font-size: .85rem;
+    line-height: 1.5em;
     width: 75%;
   }
 }

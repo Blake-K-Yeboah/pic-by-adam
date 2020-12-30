@@ -758,6 +758,10 @@ html {
     min-height: 70vh;
     background: url('../img/our-work-bg.png') center/cover no-repeat fixed;
     padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     .title {
         color: #fff;
@@ -765,7 +769,6 @@ html {
         font-weight: 900;
         font-size: 4rem;
         text-align:center;
-        margin-top: 8.5%;
         
         span {
             color: #595959;
@@ -776,7 +779,7 @@ html {
         color: #fff;
         font-size: 1rem;
         width: 27.5%;
-        margin: 2em auto;
+        margin: 2em 0;
         text-align:center;
         line-height: 1.25em;
     }
@@ -1181,6 +1184,17 @@ html {
 
     .testimonials-section {
         padding: 10em 17.5vw 7.5em 17.5vw;
+    }
+
+    .affiliate-disclosure-section {
+
+        .title {
+            font-size: 2.5rem;
+        }
+
+        .text {
+            width: 50%;
+        }
     }
 }
 
@@ -1659,6 +1673,17 @@ html {
             }
         }
     }
+
+    .affiliate-disclosure-section {
+
+        .title {
+            width: 75%;
+        }
+
+        .text {
+            width: 65%;
+        }
+    }
 }
 
 @media screen and (max-width: 548px) {
@@ -1774,6 +1799,20 @@ html {
             .testimonial-box {
                 width:75%;
             }
+        }
+    }
+
+    .affiliate-disclosure-section {
+        min-height: 85vh;
+
+        .title {
+            font-size: 2rem;
+        }
+
+        .text {
+            font-size: .85rem;
+            line-height: 1.5em;
+            width: 75%;
         }
     }
 }
