@@ -1206,6 +1206,21 @@ html {
   .affiliate-disclosure-section .text {
     width: 50%;
   }
+  .services-section {
+    padding: 15vh 5vw;
+  }
+  .services-section .grid {
+    width: 90vw;
+  }
+  .services-section .grid .service-box .content .service-heading {
+    font-size: 2.25rem;
+  }
+  .services-section .grid .service-box .content .divider {
+    margin-bottom: 1em;
+  }
+  .services-section .grid .service-box .content .service-text {
+    font-size: .9rem;
+  }
 }
 
 @media screen and (max-width: 1272px) {
@@ -1271,6 +1286,9 @@ html {
   .testimonials-section {
     padding: 10em 12.5vw 7.5em 12.5vw;
   }
+  .services-section .grid {
+    gap: 1.5em;
+  }
 }
 
 @media screen and (max-width: 1040px) {
@@ -1326,6 +1344,14 @@ html {
   }
   .testimonials-section {
     padding: 10em 5vw 7.5em 5vw;
+  }
+  .services-section {
+    padding: 15vh 15vw;
+  }
+  .services-section .grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    width: 70vw;
   }
 }
 
@@ -1542,6 +1568,13 @@ html {
   .affiliate-disclosure-section .text {
     width: 65%;
   }
+  .services-section {
+    padding: 15vh 5vw;
+  }
+  .services-section .grid {
+    width: 90vw;
+    gap: 2em;
+  }
 }
 
 @media screen and (max-width: 548px) {
@@ -1628,6 +1661,35 @@ html {
     font-size: .85rem;
     line-height: 1.5em;
     width: 75%;
+  }
+  .services-section .grid {
+    gap: 4em;
+  }
+  .services-section .grid .service-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 2em;
+  }
+  .services-section .grid .service-box .content {
+    text-align: center;
+  }
+  .services-section .grid .service-box .content .divider {
+    margin: 0 auto 1.5em auto;
+  }
+  .services-section .grid .service-box .content .service-text {
+    margin: 0 auto;
+  }
+  .services-section .grid .service-box .service-img {
+    width: 50%;
+    margin: 0 auto;
+    height: 80%;
+    min-width: 200px;
+    min-height: 300px;
   }
 }
 /*# sourceMappingURL=main.css.map */

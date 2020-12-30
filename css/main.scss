@@ -1196,6 +1196,33 @@ html {
             width: 50%;
         }
     }
+
+    .services-section {
+        padding: 15vh 5vw;
+
+        .grid {
+            width: 90vw;
+
+            .service-box {
+
+                .content {
+                    
+                    .service-heading {
+                        font-size: 2.25rem;
+                    }
+
+                    .divider {
+                        margin-bottom: 1em;
+                    }
+
+                    .service-text {
+                        font-size: .9rem;
+                    }
+
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1272px) {
@@ -1289,6 +1316,14 @@ html {
     .testimonials-section {
         padding: 10em 12.5vw 7.5em 12.5vw;
     }
+
+    .services-section {
+
+        .grid {
+            gap: 1.5em;
+        }
+
+    }
 }
 
 @media screen and (max-width:1040px) {
@@ -1374,6 +1409,16 @@ html {
 
     .testimonials-section {
         padding: 10em 5vw 7.5em 5vw;
+    }
+
+    .services-section {
+        padding: 15vh 15vw;
+
+        .grid {
+            grid-template-columns: 1fr;
+            width: 70vw;
+        }
+        
     }
 }
 
@@ -1684,6 +1729,16 @@ html {
             width: 65%;
         }
     }
+
+    .services-section {
+        padding: 15vh 5vw;
+        
+        .grid {
+            width: 90vw;
+            gap: 2em;
+        }
+        
+    }
 }
 
 @media screen and (max-width: 548px) {
@@ -1813,6 +1868,39 @@ html {
             font-size: .85rem;
             line-height: 1.5em;
             width: 75%;
+        }
+    }
+
+    .services-section {
+
+        .grid {
+            gap: 4em;
+            
+            .service-box {
+                display:flex;
+                flex-direction: column;
+                padding-bottom: 2em;
+
+                .content {
+                    text-align:center;
+
+                    .divider {
+                        margin: 0 auto 1.5em auto;
+                    }
+
+                    .service-text {
+                        margin: 0 auto;
+                    }
+                }
+
+                .service-img {
+                    width: 50%;
+                    margin: 0 auto;
+                    height: 80%;
+                    min-width: 200px;
+                    min-height: 300px;
+                }
+            }
         }
     }
 }
