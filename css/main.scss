@@ -753,6 +753,35 @@ html {
     }
 }
 
+//////// AFFILIATE DISCLOSURE SECTION STYLES ////////
+.affiliate-disclosure-section {
+    min-height: 70vh;
+    background: url('../img/our-work-bg.png') center/cover no-repeat fixed;
+    padding-top: 80px;
+
+    .title {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 4rem;
+        text-align:center;
+        margin-top: 8.5%;
+        
+        span {
+            color: #595959;
+        }
+    }
+
+    .text {
+        color: #fff;
+        font-size: 1rem;
+        width: 27.5%;
+        margin: 2em auto;
+        text-align:center;
+        line-height: 1.25em;
+    }
+}
+
 //////// SERVICES SECTION (SERVICES) STYLES ////////
 
 .services-section {
