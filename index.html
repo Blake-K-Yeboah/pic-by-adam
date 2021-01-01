@@ -145,9 +145,9 @@
 
         <div class="carousel">
             <img src="./img/work/1.jpg" alt="Image" class="carousel-image">
-            <img src="./img/work/2.jpg" alt="Image" class="carousel-image">
+            <img src="./img/work/11.jpg" alt="Image" class="carousel-image">
             <img src="./img/work/3.jpg" alt="Image" class="carousel-image">
-            <img src="./img/work/4.jpg" alt="Image" class="carousel-image">
+            <img src="./img/work/7.jpg" alt="Image" class="carousel-image">
             <img src="./img/work/5.jpg" alt="Image" class="carousel-image">
             <img src="./img/work/6.jpg" alt="Image" class="carousel-image">
         </div>
@@ -181,7 +181,7 @@
 
     </section>
 
-    <section class="contact-section" id="contact">
+    <section class="contact-section" id="contact" action="https://formspree.io/f/xgeppbao" method="POST">
 
         <h2 class="title">Get In Touch</h2>
 
@@ -189,7 +189,7 @@
 
             <div class="form-group grid">
 
-                <input type="text" class="input" name="firstname" placeholder="First Name" id="first-name" />
+                <input type="text" class="input" name="firstname" placeholder="First Name" id="first-name" required/>
 
                 <input type="text" class="input" name="company" placeholder="Company (Optional)" id="company" />
 
@@ -197,13 +197,13 @@
 
             <div class="form-group">
 
-                <input type="email" class="input" name="email" id="email" placeholder="Email">
+                <input type="email" class="input" name="email" id="email" placeholder="Email" required>
 
             </div>
 
             <div class="form-group">
 
-                <textarea name="message" id="message" cols="30" rows="10" class="input input-textarea" placeholder="Type your message"></textarea>
+                <textarea name="message" id="message" cols="30" rows="10" class="input input-textarea" placeholder="Type your message" required></textarea>
 
             </div>
 
@@ -227,9 +227,13 @@
 
                 <p class="text">Get exclusive <span class="white">photography tips</span> as I share what im doing to grow my business and level up my skills</p>
 
-                <input type="email" name="email" id="footer-email" class="email-input" placeholder="Enter your email here">
+                <form action="https://formspree.io/f/xeqppwaq" method="POST">
 
-                <button class="email-btn">Join</button>
+                    <input type="email" name="email" id="footer-email" class="email-input" placeholder="Enter your email here">
+
+                    <button class="email-btn" type="submit">Join</button>
+
+                </form>
 
             </div>
 
@@ -271,19 +275,19 @@
 
                         <li class="list-item">
 
-                            <a href="#" class="list-link">Blog</a>
+                            <a href="/coming-soon" class="list-link">Blog</a>
 
                         </li>
 
                         <li class="list-item">
 
-                            <a href="#" class="list-link">Workshops</a>
+                            <a href="/coming-soon" class="list-link">Workshops</a>
                             
                         </li>
 
                         <li class="list-item">
 
-                            <a href="#" class="list-link">Digital Products</a>
+                            <a href="/coming-soon" class="list-link">Digital Products</a>
                             
                         </li>
                         
@@ -305,7 +309,7 @@
 
                         <li class="list-item">
 
-                            <span class="list-link">hello@picbyadam.com</span>
+                            <span class="list-link">hello@picbyadam.net</span>
                             
                         </li>
 
