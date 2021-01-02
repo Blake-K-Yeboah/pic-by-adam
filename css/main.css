@@ -735,10 +735,11 @@ html {
 
 .get-in-touch .btn {
   position: relative;
-  left: 50%;
+  left: 45%;
   top: 7vh;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  text-align: center;
 }
 
 .header-w-divider {

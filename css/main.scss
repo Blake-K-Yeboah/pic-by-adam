@@ -699,9 +699,10 @@ html {
 
     .btn {
         position:relative;
-        left:50%;
+        left: 45%;
         top: 7vh;
         transform: translateX(-50%);
+        text-align:center;
     }
 }
 
