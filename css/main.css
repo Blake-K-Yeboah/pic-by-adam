@@ -1056,6 +1056,11 @@ html {
   margin-bottom: 0;
 }
 
+.faq-section .question-content .emphasise {
+  color: #4793A3;
+  font-weight: bold;
+}
+
 .faq-section .btn {
   position: relative;
   top: 5em;

@@ -990,6 +990,11 @@ html {
         &:last-of-type {
             margin-bottom: 0;
         }
+
+        .emphasise {
+            color: $primary;
+            font-weight: bold;
+        }
     }
 
     .btn {
