@@ -968,17 +968,6 @@ html {
           transform: translateX(-50%);
 }
 
-.latest-work-section .overlay {
-  width: 100vw;
-  height: 100vh;
-  background: rgba(0, 0, 0, 0.75);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 3;
-  display: none;
-}
-
 .faq-section {
   background: url("../img/pattern-bg.png") center/cover no-repeat fixed;
   padding: 15vh 25vw;
