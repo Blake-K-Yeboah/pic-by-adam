@@ -968,6 +968,36 @@ html {
           transform: translateX(-50%);
 }
 
+.latest-work-section .work-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 1em;
+  width: 50vw;
+  margin: 8em auto 0 auto;
+}
+
+.latest-work-section .work-grid .category {
+  background: center/cover no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  padding: 2em 0;
+}
+
+.latest-work-section .work-grid .category.first {
+  background-image: url("../img/work/Category Images/Plates.jpg");
+}
+
+.latest-work-section .work-grid .category.second {
+  background-image: url("../img/work/Category Images/Products.jpg");
+}
+
+.latest-work-section .work-grid .category.third {
+  background-image: url("../img/work/Category Images/People.jpg");
+}
+
 .faq-section {
   background: url("../img/pattern-bg.png") center/cover no-repeat fixed;
   padding: 15vh 25vw;

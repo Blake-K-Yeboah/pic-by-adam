@@ -907,6 +907,30 @@ html {
         }
     }
     
+    .work-grid {
+        display:grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 1em;
+        width: 50vw;
+        margin: 8em auto 0 auto;
+        
+        .category {
+            background: center/cover no-repeat;
+            object-fit: cover;
+            width: 100%;
+            padding: 2em 0;
+
+            &.first {
+                background-image: url("../img/work/Category\ Images/Plates.jpg");
+            }
+            &.second {
+                background-image: url("../img/work/Category\ Images/Products.jpg");
+            }
+            &.third {
+                background-image: url("../img/work/Category\ Images/People.jpg");
+            }
+        }
+    }
 }
 
 //////// FAQ SECTION (FAQ) STYLES ////////
