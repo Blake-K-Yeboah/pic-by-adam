@@ -750,6 +750,10 @@ html {
   position: relative;
 }
 
+.header-w-divider.portraits-bg {
+  background: url("../img/work/Category Images/header-people.jpg");
+}
+
 .header-w-divider .page-title {
   text-transform: uppercase;
   font-weight: 700;
@@ -938,6 +942,65 @@ html {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   margin-left: -70px;
+}
+
+.case-study-section {
+  background: url("../img/BG 2.png") center/cover no-repeat fixed;
+  padding: 10vh 17.5vw;
+}
+
+.case-study-section .case-study {
+  width: 100%;
+  min-height: 300px;
+  background: #fff;
+  padding: 1em 1em 1em 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.case-study-section .case-study .case-study-img {
+  width: 40%;
+  height: 275px;
+  -o-object-position: center -50px;
+     object-position: center -50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.case-study-section .case-study .content {
+  margin-top: -10px;
+}
+
+.case-study-section .case-study .content .case-study-title {
+  color: #333333;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.case-study-section .case-study .content .divider {
+  background: #4793A3;
+  height: 5px;
+  max-width: 150px;
+  width: 20%;
+  margin: .6em 0 1em 0;
+}
+
+.case-study-section .case-study .content .case-study-desc {
+  color: #272727;
+  line-height: 1.5;
+  font-size: .9rem;
+  width: 80%;
+  margin-bottom: 2em;
 }
 
 .latest-work-section {

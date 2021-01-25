@@ -715,6 +715,10 @@ html {
     border-bottom: 2px solid #fff;
     position:relative;
 
+    &.portraits-bg {
+       background: url('../img/work/Category\ Images/header-people.jpg');
+    }
+
     .page-title {
         text-transform: uppercase;
         font-weight: 700;
@@ -873,6 +877,57 @@ html {
         left:50%;
         transform: translateX(-50%);
         margin-left: -70px;
+    }
+}
+
+//////// CASE STUDY SECTION (portfolio/*) STYLES ////////
+.case-study-section {
+    background: url('../img/BG\ 2.png') center/cover no-repeat fixed;
+    padding: 10vh 17.5vw;
+
+    .case-study {
+        width:100%;
+        min-height: 300px;
+        background: #fff;
+        padding: 1em 1em 1em 2em;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .case-study-img {
+            width: 40%;
+            height: 275px;
+            object-position: center -50px;
+            object-fit:cover;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
+        }
+
+        .content {
+            margin-top: -10px;
+
+            .case-study-title {
+                color: $darkGrey;
+                font-size: 2rem;
+                font-weight:900;
+                text-transform: uppercase;
+            }
+
+            .divider {
+                background: $primary;
+                height: 5px;
+                max-width: 150px;
+                width: 20%;
+                margin: .6em 0 1em 0;
+            }
+
+            .case-study-desc {
+                color: #272727;
+                line-height: 1.5;
+                font-size: .9rem;
+                width: 80%;
+                margin-bottom: 2em;
+            }
+        }
     }
 }
 
