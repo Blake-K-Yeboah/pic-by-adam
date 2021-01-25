@@ -983,19 +983,94 @@ html {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
-  padding: 2em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  -webkit-transition: opacity .4s ease-in-out;
+  transition: opacity .4s ease-in-out;
+  height: 15vh;
+}
+
+.latest-work-section .work-grid .category .lines {
+  height: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  row-gap: 7.5px;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.latest-work-section .work-grid .category .lines .line {
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  opacity: .7;
+}
+
+.latest-work-section .work-grid .category .category-title {
+  color: #fff;
+  font-size: 2rem;
+  margin-left: 1em;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
+}
+
+.latest-work-section .work-grid .category .icon {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 2px 0 0 .5em;
+  -webkit-transition: .4s ease-in-out;
+  transition: .4s ease-in-out;
 }
 
 .latest-work-section .work-grid .category.first {
   background-image: url("../img/work/Category Images/Plates.jpg");
 }
 
+.latest-work-section .work-grid .category.first .lines {
+  width: 22.5%;
+}
+
 .latest-work-section .work-grid .category.second {
   background-image: url("../img/work/Category Images/Products.jpg");
 }
 
+.latest-work-section .work-grid .category.second .lines {
+  width: 37.5%;
+}
+
 .latest-work-section .work-grid .category.third {
   background-image: url("../img/work/Category Images/People.jpg");
+}
+
+.latest-work-section .work-grid .category.third .lines {
+  width: 52.5%;
+}
+
+.latest-work-section .work-grid .category:hover {
+  opacity: .9;
+}
+
+.latest-work-section .work-grid .category:hover .lines {
+  height: 32.5px;
+  row-gap: 8px;
+}
+
+.latest-work-section .work-grid .category:hover .category-title {
+  font-size: 2.125rem;
+}
+
+.latest-work-section .work-grid .category:hover .icon {
+  font-size: 1.625rem;
 }
 
 .faq-section {
