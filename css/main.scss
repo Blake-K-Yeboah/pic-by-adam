@@ -907,36 +907,6 @@ html {
         }
     }
 
-    .work-grid {
-        margin-top: 5em;
-        display:grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 1.5em;
-        
-        .work-img {
-            width: 100%;
-            cursor: pointer;
-
-            &:hover {
-                opacity: .75;
-            }
-
-            &.active {
-                width: 30vw;
-                position: fixed;
-                left:50%;
-                top:50%;
-                transform:translate(-50%, -45%);
-                cursor: default;
-                z-index: 4;
-
-                &:hover {
-                    opacity: 1;
-                }
-            }
-        }
-    }
-
     .overlay {
         width:100vw;
         height: 100vh;
@@ -1430,17 +1400,7 @@ html {
             }
 
         }
-
-        .work-grid {
-            grid-template-columns: 1fr 1fr 1fr;
-
-            .work-img {
-
-                &.active {
-                    width: 40vw;
-                }
-            }
-        }
+        
     }
 
     .testimonials-section {
@@ -1741,20 +1701,6 @@ html {
         }
     }
 
-    .latest-work-section {
-
-        .work-grid {
-            grid-template-columns: 1fr 1fr;
-
-            .work-img {
-
-                &.active {
-                    width: 60vw;
-                }
-            }
-        }
-    }
-
     .affiliate-disclosure-section, .coming-soon-section {
 
         .title {
@@ -1876,10 +1822,6 @@ html {
                 width:100%;
             }
 
-        }
-        
-        .work-grid {
-            grid-template-columns: 1fr;
         }
     }
 
