@@ -141,19 +141,6 @@
 
         <div class="work-grid">
 
-            <img src="../img/work/5.jpg" alt="" class="work-img">
-            <img src="../img/work/6.jpg" alt="" class="work-img">
-            <img src="../img/work/7.jpg" alt="" class="work-img">
-            <img src="../img/work/11.jpg" alt="" class="work-img">
-            <img src="../img/work/1.jpg" alt="" class="work-img">
-            <img src="../img/work/4.jpg" alt="" class="work-img">
-            <img src="../img/work/3.jpg" alt="" class="work-img">
-            <img src="../img/work/9.jpg" alt="" class="work-img">
-            <img src="../img/work/8.jpg" alt="" class="work-img">
-            <img src="../img/work/10.jpg" alt="" class="work-img">
-            <img src="../img/work/2.jpg" alt="" class="work-img">
-            <img src="../img/work/12.jpg" alt="" class="work-img">
-
         </div>
 
         <div class="overlay" id="overlay"></div>
@@ -313,25 +300,6 @@
     </footer>
 
     <script>
-
-        window.addEventListener('load', () => {
-
-            const workImages = document.querySelectorAll('.work-img');
-            const overlay = document.querySelector('#overlay');
-
-            workImages.forEach(image => {
-                image.addEventListener('click', () => {
-                    image.classList.add('active');
-                    overlay.style.display = "block";
-                });
-            });
-
-            overlay.addEventListener('click', () => {
-                document.querySelector('.work-img.active').classList.remove('active');
-                overlay.style.display = "none";
-            });
-
-        })
 
     </script>
     
