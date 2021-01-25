@@ -880,7 +880,7 @@ html {
 
 .latest-work-section {
     background: url('../img/pattern-bg.png') center/cover no-repeat fixed;
-    padding: 15vh 5vw;
+    padding: 15vh 25vw;
 
     .content {
 
@@ -911,7 +911,7 @@ html {
         display:grid;
         grid-template-rows: 1fr 1fr 1fr;
         gap: 1em;
-        width: 50vw;
+        width: 100%;
         margin: 8em auto 0 auto;
 
         .category {
@@ -1310,6 +1310,10 @@ html {
             }
         }
     }
+
+    .latest-work-section {
+        padding: 15vh 17.5vw;
+    }
 }
 
 @media screen and (max-width: 1272px) {
@@ -1473,6 +1477,7 @@ html {
     }
 
     .latest-work-section {
+        padding: 15vh 15vw;
 
         .content {
 
@@ -1480,6 +1485,25 @@ html {
                 width:50%;
             }
 
+        }
+
+        .work-grid {
+
+            .category {
+                height: 12.5vh;
+
+                .category-title {
+                    font-size: 1.75rem;
+                }
+
+                .icon {
+                    font-size: 1.3rem;
+                }
+
+                .lines {
+                    height: 25px;
+                }
+            }
         }
 
     }
@@ -1802,6 +1826,21 @@ html {
         }
         
     }
+
+    .latest-work-section {
+        padding: 15vh 5vw;
+
+        .work-grid {
+
+            .category {
+                justify-content: center;
+
+                .lines {
+                    display:none;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 548px) {
@@ -1889,13 +1928,13 @@ html {
         }
 
         .page-title {
-            width:100%;
+            width:80%;
         }
     }
 
     .latest-work-section {
-        padding-left: 15vw;
-        padding-right: 15vw;
+        padding-left: 5vw;
+        padding-right: 5vw;
 
         .content {
 

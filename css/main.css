@@ -942,7 +942,7 @@ html {
 
 .latest-work-section {
   background: url("../img/pattern-bg.png") center/cover no-repeat fixed;
-  padding: 15vh 5vw;
+  padding: 15vh 25vw;
 }
 
 .latest-work-section .content .title {
@@ -974,7 +974,7 @@ html {
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   gap: 1em;
-  width: 50vw;
+  width: 100%;
   margin: 8em auto 0 auto;
 }
 
@@ -1332,6 +1332,9 @@ html {
   .services-section .grid .service-box .content .service-text {
     font-size: .9rem;
   }
+  .latest-work-section {
+    padding: 15vh 17.5vw;
+  }
 }
 
 @media screen and (max-width: 1272px) {
@@ -1443,8 +1446,23 @@ html {
   .header-w-divider .page-title {
     font-size: 3rem;
   }
+  .latest-work-section {
+    padding: 15vh 15vw;
+  }
   .latest-work-section .content .desc {
     width: 50%;
+  }
+  .latest-work-section .work-grid .category {
+    height: 12.5vh;
+  }
+  .latest-work-section .work-grid .category .category-title {
+    font-size: 1.75rem;
+  }
+  .latest-work-section .work-grid .category .icon {
+    font-size: 1.3rem;
+  }
+  .latest-work-section .work-grid .category .lines {
+    height: 25px;
   }
   .testimonials-section {
     padding: 10em 5vw 7.5em 5vw;
@@ -1672,6 +1690,17 @@ html {
     width: 90vw;
     gap: 2em;
   }
+  .latest-work-section {
+    padding: 15vh 5vw;
+  }
+  .latest-work-section .work-grid .category {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .latest-work-section .work-grid .category .lines {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 548px) {
@@ -1732,11 +1761,11 @@ html {
     top: 30%;
   }
   .header-w-divider .page-title {
-    width: 100%;
+    width: 80%;
   }
   .latest-work-section {
-    padding-left: 15vw;
-    padding-right: 15vw;
+    padding-left: 5vw;
+    padding-right: 5vw;
   }
   .latest-work-section .content .desc {
     width: 100%;
