@@ -880,6 +880,30 @@ html {
     }
 }
 
+//////// PORTFOLIO IMAGE POPUP (portfolio/*) STYLES ////////
+.portfolio-overlay {
+    width:100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,0.75);
+    z-index: 3;
+    opacity: 0;
+    display:none;
+}
+
+.portfolio-popup-image {
+    height: 70vh;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    z-index: 4;
+    opacity: 0;
+    display:none;
+}
+
 //////// CASE STUDY SECTION (portfolio/*) STYLES ////////
 .case-study-section {
     background: url('../img/BG\ 2.png') center/cover no-repeat fixed;
@@ -1395,9 +1419,10 @@ html {
         padding: 15vh 17.5vw;
     }
 
-    .case-study-section {
+    .case-study-section, .portfolio-work-section {
         padding: 10vh 10vw;
     }
+
 }
 
 @media screen and (max-width: 1272px) {
@@ -1721,6 +1746,12 @@ html {
                     }
                 }
             }
+        }
+    }
+
+    .portfolio-work-section {
+        .work-grid {
+            grid-template-columns: 1fr 1fr;
         }
     }
 }
@@ -2159,6 +2190,14 @@ html {
                 width: 80%;
             }
 
+        }
+    }
+
+    .portfolio-work-section {
+        padding: 10vh 15vw;
+
+        .work-grid {
+            grid-template-columns: 1fr;
         }
     }
 }
