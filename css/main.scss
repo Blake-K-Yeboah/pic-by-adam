@@ -318,10 +318,14 @@ html {
                 margin-left: 1.2em;
             }
 
-            &:hover {
+            /*&:hover {
                 width: calc(0.3 * 50vw);
                 height: calc((0.3 * 50vw) * 1.25);
                 margin-top: -25px;
+            }*/
+
+            &:hover {
+                filter: brightness(1.4) contrast(110%);
             }
         }
     }

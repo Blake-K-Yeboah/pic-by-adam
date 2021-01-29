@@ -333,6 +333,11 @@ html {
   position: relative;
   width: calc(0.25 * 50vw);
   height: calc((0.25 * 50vw) * 1.25);
+  /*&:hover {
+                width: calc(0.3 * 50vw);
+                height: calc((0.3 * 50vw) * 1.25);
+                margin-top: -25px;
+            }*/
 }
 
 .work .carousel .carousel-image:not(:first-of-type) {
@@ -340,9 +345,8 @@ html {
 }
 
 .work .carousel .carousel-image:hover {
-  width: calc(0.3 * 50vw);
-  height: calc((0.3 * 50vw) * 1.25);
-  margin-top: -25px;
+  -webkit-filter: brightness(1.4) contrast(110%);
+          filter: brightness(1.4) contrast(110%);
 }
 
 .work .btn {
