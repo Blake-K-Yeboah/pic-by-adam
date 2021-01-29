@@ -13,7 +13,7 @@ document.getElementById("close-icon").addEventListener('click', () => {
 const portfolioNavItem = document.querySelector('.portfolio-nav-item');
 const dropdown = document.getElementById('dropdown');
 
-portfolioNavItem.addEventListener('mouseover', () => {
+portfolioNavItem.addEventListener('mouseenter', () => {
     
     if (dropdown.style.display != 'flex') {
         dropdown.style.display = 'flex';
