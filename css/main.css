@@ -787,6 +787,14 @@ html {
   background: url("../img/work/Category Images/header-people.jpg");
 }
 
+.header-w-divider.plates-bg {
+  background: url("../img/work/Category Images/header-plates.jpg");
+}
+
+.header-w-divider.products-bg {
+  background: url("../img/work/Category Images/header-products.jpg");
+}
+
 .header-w-divider .page-title {
   text-transform: uppercase;
   font-weight: 700;
