@@ -22,6 +22,9 @@ portfolioNavItem.addEventListener('mouseenter', () => {
 });
 
 portfolioNavItem.addEventListener('mouseleave', () => {
-    gsap.to('#dropdown', { opacity: 0, duration: 1 });
-    setTimeout(() => { dropdown.style.display = 'none' }, 1000);
+
+    if (dropdown.style.display !== 'none') {
+        gsap.to('#dropdown', { opacity: 0, duration: 1 });
+        setTimeout(() => { dropdown.style.display = 'none' }, 1000);
+    }
 })
