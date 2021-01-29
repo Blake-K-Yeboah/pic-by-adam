@@ -32,7 +32,15 @@ const workImages = document.querySelectorAll('.work-image');
         
 workImages.forEach(image => {
 
-    image.addEventListener('click', showImagePopUp.bind(this, image.src));
+    if (image.getAttribute('data-collection')) {
+        
+        image.addEventListener('click', showImagePopUp.bind(this, `/img/work/Product/Collections/${image.getAttribute('data-collection')}`));
+
+    } else {
+        
+        image.addEventListener('click', showImagePopUp.bind(this, image.src));
+
+    }
 
 });
 
