@@ -80,12 +80,13 @@ html {
 
         .nav-item {
             line-height: 80px;
-            
+            position:relative;
+
             &:not(:last-of-type) {
                 margin-right: 1.5em;
             }
 
-            .nav-link {
+            .nav-link, .dropdown .dropdown-link {
                 text-decoration: none;
                 color: $darkGrey;
                 font-size: .85rem;
@@ -101,6 +102,24 @@ html {
                     color: $primary;
                     cursor: default;
                 }
+            }
+
+            .dropdown {
+                width:200%;
+                height: 150px;
+                background: #fff;
+                position:absolute;
+                bottom: -145px;
+                left: -50%;
+                line-height: 1em;
+                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                align-items: center;
+                border-radius: 0 0 5px 5px;
+                opacity: 0;
+                display:none;
             }
         }
     }
