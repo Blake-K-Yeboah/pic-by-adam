@@ -8,3 +8,20 @@ document.getElementById("menu-icon").addEventListener('click', () => {
 document.getElementById("close-icon").addEventListener('click', () => {
     document.querySelector('.mobile-menu').style.display = "none";            
 });
+
+// Dropdown Menu Animation
+const portfolioNavItem = document.querySelector('.portfolio-nav-item');
+const dropdown = document.getElementById('dropdown');
+
+portfolioNavItem.addEventListener('mouseover', () => {
+    
+    if (dropdown.style.display != 'flex') {
+        dropdown.style.display = 'flex';
+        gsap.to('#dropdown', { opacity: 1, duration: 1 });
+    }
+});
+
+portfolioNavItem.addEventListener('mouseleave', () => {
+    gsap.to('#dropdown', { opacity: 0, duration: 1 });
+    setTimeout(() => { dropdown.style.display = 'none' }, 1000);
+})
