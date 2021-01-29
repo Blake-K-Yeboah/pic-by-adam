@@ -34,9 +34,19 @@
             
             </li>
             
-            <li class="nav-item">
+            <li class="nav-item portfolio-nav-item">
             
                 <a href="/portfolio" class="nav-link">Portfolio</a>
+
+                <div class="dropdown" id="dropdown">
+                    
+                    <a href="/portfolio/people" class="dropdown-link">People</a>
+
+                    <a href="/portfolio/products" class="dropdown-link">Products</a>
+
+                    <a href="/portfolio/plates" class="dropdown-link">Plates</a>
+
+                </div>
             
             </li>
             
@@ -379,7 +389,6 @@
         gsap.from(".camera", { opacity: 0, duration: 1, y: 50, delay: .75 });
         gsap.from(".work-heading", { opacity: 0, duration: 1, y: 50, delay: 1.25 });
         gsap.from(".divider", { opacity: 0, duration: 1, y: 50, delay: 1.25 });
-        
         
 
     </script>
