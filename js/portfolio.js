@@ -10,7 +10,7 @@ const showImagePopUp = (source) => {
     portfolioPopupImage.style.display = 'block';
     portfolioPopupImage.src = source;
 
-    gsap.to('.portfolio-popup-image', { opacity: 1, duration: .5, height: '90vh' });
+    gsap.to('.portfolio-popup-image', { opacity: 1, duration: .5, height: document.querySelector('.portfolio-popup-image').style.height });
 
 }
 
