@@ -998,7 +998,7 @@ html {
 }
 
 .portfolio-popup-image {
-  height: 70vh;
+  height: 80vh;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1905,6 +1905,9 @@ html {
   .latest-work-section .category-grid .category .lines {
     display: none;
   }
+  .portfolio-popup-image {
+    height: 50vh;
+  }
 }
 
 @media screen and (max-width: 548px) {
@@ -2032,6 +2035,9 @@ html {
   .portfolio-work-section .work-grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+  }
+  .portfolio-popup-image {
+    height: 40vh;
   }
 }
 /*# sourceMappingURL=main.css.map */

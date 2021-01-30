@@ -925,7 +925,7 @@ html {
 }
 
 .portfolio-popup-image {
-    height: 70vh;
+    height: 80vh;
     position: fixed;
     top:50%;
     left:50%;
@@ -2047,6 +2047,10 @@ html {
             }
         }
     }
+
+    .portfolio-popup-image {
+        height: 50vh;
+    }
 }
 
 @media screen and (max-width: 548px) {
@@ -2230,5 +2234,9 @@ html {
         .work-grid {
             grid-template-columns: 1fr;
         }
+    }
+
+    .portfolio-popup-image {
+        height: 40vh;
     }
 }
