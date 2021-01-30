@@ -119,7 +119,16 @@ html {
                 align-items: center;
                 border-radius: 0 0 5px 5px;
                 opacity: 0;
-                display:none;
+                transition: opacity .5s ease-in-out;
+                visibility: hidden;
+            }
+
+            &.portfolio-nav-item:hover {
+
+                .dropdown {
+                    opacity: 1;
+                    visibility:visible;
+                }
             }
         }
     }

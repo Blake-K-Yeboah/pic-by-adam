@@ -140,7 +140,14 @@ html {
           align-items: center;
   border-radius: 0 0 5px 5px;
   opacity: 0;
-  display: none;
+  -webkit-transition: opacity .5s ease-in-out;
+  transition: opacity .5s ease-in-out;
+  visibility: hidden;
+}
+
+.navbar .nav-list .nav-item.portfolio-nav-item:hover .dropdown {
+  opacity: 1;
+  visibility: visible;
 }
 
 .navbar .menu-icon {
