@@ -706,6 +706,7 @@ html {
   height: 80vh;
   background: url("../img/BG 2.png") center/cover no-repeat fixed;
   padding: 10vh 0;
+  text-align: center;
 }
 
 .get-in-touch .title {
@@ -775,11 +776,7 @@ html {
 
 .get-in-touch .btn {
   position: relative;
-  left: 45%;
   top: 7vh;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  text-align: center;
 }
 
 .header-w-divider {
@@ -1702,6 +1699,9 @@ html {
 }
 
 @media screen and (max-width: 1040px) {
+  .work, .contact-section, .about-header, .get-in-touch, .header-w-divider, .services-section, .latest-work-section, .faq-section, .affiliate-disclosure-section, .coming-soon-section, .portfolio-work-section, .case-study-container {
+    background-attachment: scroll;
+  }
   .navbar .nav-list {
     display: none;
   }
