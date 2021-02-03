@@ -956,7 +956,7 @@ html {
         width: 60vw;
         background: #fff;
         padding: 4em;
-        min-width:1000px;
+        min-width:1150px;
         text-align:center;
 
         .title {
@@ -1552,6 +1552,45 @@ html {
         .image-section {
             .logo {
                 top: 0;
+            }
+        }
+    }
+
+    .case-study-container .case-study-body {
+        min-width: 0;
+        
+        
+        .title {
+            text-align:center;        
+        }
+
+        .divider {
+            margin: .6em auto 1em auto;
+        }
+
+        .grid {
+            display:block;
+
+            .text {
+                text-align:center;
+                width:90%;
+                margin: 0 0 4em 5%;
+
+                &.num-4 {
+                    margin: 0 0 4em 5%;
+                }
+
+                &:not(:first-of-type) {
+                    margin: 0 0 4em 5%;
+                }
+
+                &:first-of-type {
+                    margin-top: 2em;
+                }
+            }
+
+            .img {
+                margin-bottom: 4em;
             }
         }
     }
@@ -2326,5 +2365,9 @@ html {
 
     .portfolio-popup-image {
         height: 40vh;
+    }
+
+    .case-study-container .case-study-body {
+        width: 90vw;
     }
 }

@@ -1034,7 +1034,7 @@ html {
   width: 60vw;
   background: #fff;
   padding: 4em;
-  min-width: 1000px;
+  min-width: 1150px;
   text-align: center;
 }
 
@@ -1597,6 +1597,35 @@ html {
   .about-section .image-section .logo {
     top: 0;
   }
+  .case-study-container .case-study-body {
+    min-width: 0;
+  }
+  .case-study-container .case-study-body .title {
+    text-align: center;
+  }
+  .case-study-container .case-study-body .divider {
+    margin: .6em auto 1em auto;
+  }
+  .case-study-container .case-study-body .grid {
+    display: block;
+  }
+  .case-study-container .case-study-body .grid .text {
+    text-align: center;
+    width: 90%;
+    margin: 0 0 4em 5%;
+  }
+  .case-study-container .case-study-body .grid .text.num-4 {
+    margin: 0 0 4em 5%;
+  }
+  .case-study-container .case-study-body .grid .text:not(:first-of-type) {
+    margin: 0 0 4em 5%;
+  }
+  .case-study-container .case-study-body .grid .text:first-of-type {
+    margin-top: 2em;
+  }
+  .case-study-container .case-study-body .grid .img {
+    margin-bottom: 4em;
+  }
 }
 
 @media screen and (max-width: 1148px) {
@@ -2131,6 +2160,9 @@ html {
   }
   .portfolio-popup-image {
     height: 40vh;
+  }
+  .case-study-container .case-study-body {
+    width: 90vw;
   }
 }
 /*# sourceMappingURL=main.css.map */
