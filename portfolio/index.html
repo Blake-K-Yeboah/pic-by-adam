@@ -34,9 +34,19 @@
             
             </li>
             
-            <li class="nav-item">
+            <li class="nav-item portfolio-nav-item">
             
-                <a href="/portfolio" class="nav-link active">Portfolio</a>
+                <a href="/portfolio" class="nav-link">Portfolio</a>
+
+                <div class="dropdown" id="dropdown">
+                    
+                    <a href="/portfolio/people" class="dropdown-link">People</a>
+
+                    <a href="/portfolio/products" class="dropdown-link">Products</a>
+
+                    <a href="/portfolio/plates" class="dropdown-link">Plates</a>
+
+                </div>
             
             </li>
             
@@ -139,24 +149,51 @@
 
         </div>
 
-        <div class="work-grid">
+        <div class="category-grid">
 
-            <img src="../img/work/5.jpg" alt="" class="work-img">
-            <img src="../img/work/6.jpg" alt="" class="work-img">
-            <img src="../img/work/7.jpg" alt="" class="work-img">
-            <img src="../img/work/11.jpg" alt="" class="work-img">
-            <img src="../img/work/1.jpg" alt="" class="work-img">
-            <img src="../img/work/4.jpg" alt="" class="work-img">
-            <img src="../img/work/3.jpg" alt="" class="work-img">
-            <img src="../img/work/9.jpg" alt="" class="work-img">
-            <img src="../img/work/8.jpg" alt="" class="work-img">
-            <img src="../img/work/10.jpg" alt="" class="work-img">
-            <img src="../img/work/2.jpg" alt="" class="work-img">
-            <img src="../img/work/12.jpg" alt="" class="work-img">
+            <a href="/portfolio/plates" class="category first">
+
+                <div class="lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+
+                <h2 class="category-title">Plates</h2>
+
+                <i class="far fa-arrow-alt-circle-right icon"></i>
+
+            </a>
+
+            <a href="/portfolio/products" class="category second">
+
+                <div class="lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+
+                <h2 class="category-title">Products</h2>
+
+                <i class="far fa-arrow-alt-circle-right icon"></i>
+
+            </a>
+
+            <a href="/portfolio/people" class="category third">
+
+                <div class="lines">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+
+                <h2 class="category-title">People</h2>
+
+                <i class="far fa-arrow-alt-circle-right icon"></i>
+
+            </a>
 
         </div>
-
-        <div class="overlay" id="overlay"></div>
 
     </section>
 
@@ -311,29 +348,6 @@
         </div>
 
     </footer>
-
-    <script>
-
-        window.addEventListener('load', () => {
-
-            const workImages = document.querySelectorAll('.work-img');
-            const overlay = document.querySelector('#overlay');
-
-            workImages.forEach(image => {
-                image.addEventListener('click', () => {
-                    image.classList.add('active');
-                    overlay.style.display = "block";
-                });
-            });
-
-            overlay.addEventListener('click', () => {
-                document.querySelector('.work-img.active').classList.remove('active');
-                overlay.style.display = "none";
-            });
-
-        })
-
-    </script>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
     <script src="/js/main.js"></script>
