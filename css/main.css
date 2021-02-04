@@ -577,10 +577,6 @@ html {
   text-decoration: none;
 }
 
-.large-footer .footer-grid .lists-section .list-container .list .list-item .list-link:hover {
-  text-decoration: underline;
-}
-
 .large-footer .footer-small-section {
   display: -webkit-box;
   display: -ms-flexbox;
