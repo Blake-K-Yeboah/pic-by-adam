@@ -980,6 +980,15 @@ html {
   line-height: 1.5em;
 }
 
+.services-section .grid .service-box .content .service-text .link {
+  color: #4793A3;
+  text-decoration: none;
+}
+
+.services-section .grid .service-box .content .service-text .link:hover {
+  text-decoration: underline;
+}
+
 .services-section .btn {
   position: relative;
   top: 6em;

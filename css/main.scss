@@ -904,6 +904,15 @@ html {
                     width: 90%;
                     font-size: 1rem;
                     line-height: 1.5em;
+
+                    .link {
+                        color: $primary;
+                        text-decoration:none;
+
+                        &:hover {
+                            text-decoration:underline;
+                        }
+                    }
                 }
             }
         }
