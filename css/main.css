@@ -2440,6 +2440,18 @@ html {
   .case-study-container .case-study .small-img-grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    row-gap: 2em;
+    -webkit-column-gap: 0;
+            column-gap: 0;
+  }
+  .case-study-container .case-study .content-section .images-container *,
+  .case-study-container .case-study .large-img-grid *,
+  .case-study-container .case-study .small-img-grid * {
+    grid-row: span 1;
+    grid-column: span 1;
+  }
+  .case-study-container .case-study .heres-what-text {
+    font-size: 1.1rem;
   }
   .work-category-section {
     -ms-grid-columns: 1fr;

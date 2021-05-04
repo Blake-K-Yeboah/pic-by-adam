@@ -2557,6 +2557,17 @@ html {
         .large-img-grid,
         .small-img-grid {
             grid-template-columns: 1fr;
+            row-gap: 2em;
+            column-gap: 0;
+
+            * {
+                grid-row: span 1;
+                grid-column: span 1;
+            }
+        }
+
+        .heres-what-text {
+            font-size: 1.1rem;
         }
     }
 
