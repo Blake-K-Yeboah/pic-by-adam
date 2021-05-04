@@ -54,14 +54,14 @@ html {
 .navbar {
     height: 80px;
     width: 100vw;
-    box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
     background: #fff;
     padding: 0 5vw;
-    display:flex;
+    display: flex;
     justify-content: space-between;
     border-top: 5px solid $primary;
-    position:fixed;
-    top:0;
+    position: fixed;
+    top: 0;
     left: 0;
     z-index: 3;
 
@@ -69,24 +69,25 @@ html {
         width: 100px;
         height: 50px;
         position: relative;
-        top:50%;
-        transform:translateY(-50%);
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .nav-list {
         height: 80px;
         list-style: none;
-        display:flex;
+        display: flex;
 
         .nav-item {
             line-height: 80px;
-            position:relative;
+            position: relative;
 
             &:not(:last-of-type) {
                 margin-right: 1.5em;
             }
 
-            .nav-link, .dropdown .dropdown-link {
+            .nav-link,
+            .dropdown .dropdown-link {
                 text-decoration: none;
                 color: $darkGrey;
                 font-size: .85rem;
@@ -105,14 +106,14 @@ html {
             }
 
             .dropdown {
-                width:200%;
+                width: 200%;
                 height: 150px;
                 background: #fff;
-                position:absolute;
+                position: absolute;
                 bottom: -145px;
                 left: -50%;
                 line-height: 1em;
-                box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
@@ -127,7 +128,7 @@ html {
 
                 .dropdown {
                     opacity: 1;
-                    visibility:visible;
+                    visibility: visible;
                 }
             }
         }
@@ -147,23 +148,23 @@ html {
 .mobile-menu {
     width: 100vw;
     height: 100vh;
-    background: rgba(255,255,255, 0.95);
+    background: rgba(255, 255, 255, 0.95);
     position: fixed;
-    left:0;
-    top:0;
+    left: 0;
+    top: 0;
     z-index: 5;
-    display:none;
+    display: none;
 
     .close-icon {
         color: $darkGrey;
         font-size: 2rem;
-        position:absolute;
+        position: absolute;
         right: 5vw;
         top: 6vh;
     }
 
     .nav-list {
-        display:flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -174,7 +175,7 @@ html {
             margin: 1em 0;
 
             .nav-link {
-                text-transform:uppercase;
+                text-transform: uppercase;
                 color: $darkGrey;
                 text-decoration: none;
                 font-weight: bold;
@@ -188,26 +189,27 @@ html {
         }
     }
 }
+
 //////// HEADER (HOME) STYLES ////////
 
 .home-header {
     height: 70vh;
     margin-top: 80px;
     width: 100vw;
-    position:relative;
+    position: relative;
     background: url('../img/pattern-bg.png') center/cover no-repeat;
 
     .text-container {
         height: 50vh;
-        position:absolute; 
-        top:50%;
+        position: absolute;
+        top: 50%;
         left: 50%;
-        transform:translate(-50%, -50%);
-        text-align:center;
+        transform: translate(-50%, -50%);
+        text-align: center;
 
         .small-heading {
             font-weight: 500;
-            text-transform:uppercase;
+            text-transform: uppercase;
             color: $darkGrey;
             font-size: 1.25rem;
             margin-bottom: .5em;
@@ -228,21 +230,21 @@ html {
 
             &.primary {
                 color: $primary;
-                position:relative;
+                position: relative;
                 top: -10px;
             }
         }
 
         .btn {
-            position:relative;
+            position: relative;
             top: 1em;
         }
     }
 
     .camera {
-        position:absolute;
+        position: absolute;
         bottom: -50px;
-        left:50%;
+        left: 50%;
         transform: translateX(-50%);
         width: 175px;
     }
@@ -304,11 +306,11 @@ html {
     .work-heading {
         color: #ffffff;
         text-transform: uppercase;
-        text-align:center;
+        text-align: center;
         width: 650px;
         position: relative;
-        left:50%;
-        transform:translateX(-50%);
+        left: 50%;
+        transform: translateX(-50%);
         font-size: 1.85rem;
         letter-spacing: -1px;
     }
@@ -324,24 +326,24 @@ html {
         font-size: 1.1rem;
         color: #eee;
         width: 550px;
-        text-align:center;
+        text-align: center;
         margin: 0 auto;
         line-height: 1.5em;
     }
 
     .carousel {
         width: 80vw;
-        position:relative;
+        position: relative;
         margin: 3em auto 0 auto;
         height: 40vh;
-        display:flex;
+        display: flex;
 
         .carousel-image {
             transition: .5s ease-in-out;
             position: relative;
             width: calc(0.25 * 50vw);
             height: calc((0.25 * 50vw) * 1.25);
-            
+
             &:not(:first-of-type) {
                 margin-left: 1.2em;
             }
@@ -359,9 +361,9 @@ html {
     }
 
     .btn {
-        position:relative;
+        position: relative;
         left: calc(50% - 60px);
-        transform:translateX(-50%);
+        transform: translateX(-50%);
     }
 }
 
@@ -382,7 +384,7 @@ html {
             color: $darkGrey;
             text-transform: uppercase;
             font-size: 3rem;
-            text-align:center;
+            text-align: center;
             margin-top: 25%;
 
             .primary {
@@ -391,8 +393,8 @@ html {
         }
 
         .text {
-            width:47.5%;
-            text-align:center;
+            width: 47.5%;
+            text-align: center;
             margin: 2em auto 3em auto;
             line-height: 1.75;
             color: lighten($darkGrey, 10%);
@@ -400,9 +402,9 @@ html {
         }
 
         .btn {
-            position:relative;
+            position: relative;
             left: calc(50% - 65px);
-            transform:translateX(-50%);
+            transform: translateX(-50%);
         }
     }
 
@@ -414,8 +416,8 @@ html {
 
         .logo {
             height: 92vh;
-            max-width:50vw;
-            object-fit:cover;
+            max-width: 50vw;
+            object-fit: cover;
         }
 
     }
@@ -430,13 +432,13 @@ html {
 
     .title {
         color: #fff;
-        text-align:center;
+        text-align: center;
         font-size: 2.25rem;
         margin-bottom: 1em;
     }
 
     .contact-form {
-        width:30vw;
+        width: 30vw;
         margin: 0 auto;
 
         .form-group {
@@ -444,7 +446,7 @@ html {
             margin: 1.25em 0;
 
             &.grid {
-                display:grid;
+                display: grid;
                 grid-template-columns: 1fr 1fr;
                 column-gap: 1.25em;
             }
@@ -458,9 +460,9 @@ html {
             }
 
             .btn {
-                position:relative;
-                left:50%;
-                transform:translateX(-50%);
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
             }
         }
     }
@@ -473,7 +475,7 @@ html {
     padding: 10vh 20vw 0 20vw;
 
     .footer-grid {
-        display:grid;
+        display: grid;
         grid-template-columns: 1fr 1fr;
         margin-bottom: 10vh;
 
@@ -511,10 +513,10 @@ html {
                 background: $primary;
                 height: 30px;
                 border: 1px solid $primary;
-                text-transform:uppercase;
+                text-transform: uppercase;
                 cursor: pointer;
                 transition: .3s ease-in-out;
-                
+
                 &:hover {
                     background: lighten($primary, 10%);
                 }
@@ -522,7 +524,7 @@ html {
         }
 
         .lists-section {
-            display:grid;
+            display: grid;
             grid-template-columns: 1fr 1fr 1fr;
 
             .list-container {
@@ -552,19 +554,20 @@ html {
     }
 
     .footer-small-section {
-        display:flex;
+        display: flex;
         justify-content: space-between;
         height: 100px;
         align-items: center;
         border-top: 2px solid #444;
 
-        .copyright, .affiliate-disclosure {
+        .copyright,
+        .affiliate-disclosure {
             color: #aaa;
             font-size: 0.85rem;
         }
 
         .icon-list {
-            display:flex;
+            display: flex;
             list-style: none;
 
             .icon-container {
@@ -601,11 +604,11 @@ html {
         font-size: 4.5rem;
         color: #fff;
         letter-spacing: -3px;
-        position:absolute;
+        position: absolute;
         left: 50%;
         top: 50%;
         transform: translate(-50%, -50%);
-        text-align:center;
+        text-align: center;
     }
 }
 
@@ -617,11 +620,11 @@ html {
     grid-template-columns: 2fr 1fr;
     height: 80vh;
     background: url('../img/pattern-bg.png') center/cover no-repeat;
-    position:relative;
+    position: relative;
     overflow: hidden;
-    
+
     .text-section {
-        display:flex;
+        display: flex;
         flex-direction: column;
         justify-content: center;
 
@@ -639,8 +642,8 @@ html {
         }
 
         .about-text {
-            width:80%;
-            text-align:left;
+            width: 80%;
+            text-align: left;
             line-height: 1.75;
             color: lighten($darkGrey, 10%);
             font-weight: lighter;
@@ -656,8 +659,8 @@ html {
 
     .adam-img {
         width: 30vw;
-        position:absolute;
-        bottom:0;
+        position: absolute;
+        bottom: 0;
         right: 20vw;
     }
 }
@@ -668,14 +671,14 @@ html {
     height: 80vh;
     background: url('../img/BG 2.png') center/cover no-repeat fixed;
     padding: 10vh 0;
-    text-align:center;
+    text-align: center;
 
     .title {
         color: #fff;
-        text-transform:uppercase;
+        text-transform: uppercase;
         font-weight: 700;
         font-size: 3rem;
-        text-align:center;
+        text-align: center;
         letter-spacing: 5px;
         margin-bottom: 7vh;
     }
@@ -683,7 +686,7 @@ html {
     .grid {
         background: #fff;
         width: 50vw;
-        display:grid;
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         margin: 0 auto;
         height: 60%;
@@ -691,25 +694,25 @@ html {
         .box {
             width: 100%;
             color: #fff;
-            position:relative;
+            position: relative;
 
             .icon {
-                position:absolute;
-                top:40%;
-                left:50%;
-                transform:translate(-50%, -50%);
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
                 font-size: 3rem;
             }
 
             .text {
                 font-style: italic;
                 font-size: 1.15rem;
-                position:absolute;
-                top:60%;
-                transform:translate(-50%, -50%);
-                left:50%;
+                position: absolute;
+                top: 60%;
+                transform: translate(-50%, -50%);
+                left: 50%;
                 min-width: 200px;
-                text-align:center;
+                text-align: center;
 
                 .link {
                     color: #fff;
@@ -732,7 +735,7 @@ html {
     }
 
     .btn {
-        position:relative;
+        position: relative;
         top: 7vh;
     }
 }
@@ -744,10 +747,10 @@ html {
     margin-top: 80px;
     background: url('../img/our-work-bg.png') center/cover no-repeat fixed;
     border-bottom: 2px solid #fff;
-    position:relative;
+    position: relative;
 
     &.portraits-bg {
-       background: url('../img/work/Category\ Images/header-people.jpg');
+        background: url('../img/People & Events (formerly portraits page)/HEADER.jpeg') center/cover no-repeat fixed;
     }
 
     &.plates-bg {
@@ -758,33 +761,45 @@ html {
         background: url('../img/work/Category\ Images/header-products.jpg');
     }
 
+    &.the-ring-shop-bg {
+        background: url('../img/work/Auto/Header.jpg') center/1920px no-repeat;
+    }
+
+    &.no-border {
+        border-bottom: none;
+    }
+
+    &.auto-bg {
+        background: url('../img/work/header.jpg') center/cover no-repeat fixed;
+    }
+
     .page-title {
         text-transform: uppercase;
         font-weight: 700;
         font-size: 3.25rem;
         color: #fff;
         letter-spacing: 2px;
-        position:relative;
+        position: relative;
         left: 50%;
-        top:40%;
+        top: 40%;
         transform: translate(-50%, -50%);
-        text-align:center;
+        text-align: center;
     }
 
     .divider {
         height: 3.5px;
         width: 200px;
         background: #fff;
-        position:relative;
+        position: relative;
         top: 40%;
-        left:50%;
-        transform:translate(-50%, -50%);
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     .header-img {
-        position:absolute;
-        left:50%;
-        transform:translateX(-50%);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         bottom: -50px;
 
         &.lens {
@@ -799,7 +814,8 @@ html {
 }
 
 //////// AFFILIATE DISCLOSURE SECTION AND COMING SOON SECTION STYLES ////////
-.affiliate-disclosure-section, .coming-soon-section {
+.affiliate-disclosure-section,
+.coming-soon-section {
     min-height: 70vh;
     background: url('../img/our-work-bg.png') center/cover no-repeat fixed;
     padding-top: 80px;
@@ -813,8 +829,8 @@ html {
         text-transform: uppercase;
         font-weight: 900;
         font-size: 4rem;
-        text-align:center;
-        
+        text-align: center;
+
         span {
             color: #595959;
         }
@@ -825,7 +841,7 @@ html {
         font-size: 1rem;
         width: 27.5%;
         margin: 2em 0;
-        text-align:center;
+        text-align: center;
         line-height: 1.25em;
     }
 }
@@ -835,7 +851,7 @@ html {
 
     .email-form {
         margin-top: 2em;
-        
+
         .input {
             padding: 12px 16px;
             min-width: 30vw;
@@ -867,15 +883,15 @@ html {
     width: 100vw;
 
     .grid {
-        display:grid;
+        display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 3em;
         width: 80vw;
 
         .service-box {
-            width:100%;
+            width: 100%;
             background: #fff;
-            display:flex;
+            display: flex;
             padding: 6px;
 
             .service-img {
@@ -908,10 +924,10 @@ html {
 
                     .link {
                         color: $primary;
-                        text-decoration:none;
+                        text-decoration: none;
 
                         &:hover {
-                            text-decoration:underline;
+                            text-decoration: underline;
                         }
                     }
                 }
@@ -920,9 +936,9 @@ html {
     }
 
     .btn {
-        position:relative;
+        position: relative;
         top: 6em;
-        left:50%;
+        left: 50%;
         transform: translateX(-50%);
         margin-left: -70px;
     }
@@ -930,33 +946,33 @@ html {
 
 //////// PORTFOLIO IMAGE POPUP (portfolio/*) STYLES ////////
 .portfolio-overlay {
-    width:100vw;
+    width: 100vw;
     height: 100vh;
     position: fixed;
-    top:0;
-    left:0;
-    background: rgba(0,0,0,0.75);
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.75);
     z-index: 3;
     opacity: 0;
-    display:none;
+    display: none;
 }
 
 .portfolio-popup-image {
     height: 80vh;
     position: fixed;
-    top:50%;
-    left:50%;
-    transform:translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 4;
     opacity: 0;
-    display:none;
+    display: none;
 }
 
 //////// CASE STUDY CONTAINER (portfolio/*/case-study) STYLES ////////
 .case-study-container {
     background: url('../img/setup-baackground-2.jpg') center/cover no-repeat fixed;
-    display:flex;
-    align-items:center;
+    display: flex;
+    align-items: center;
     justify-content: center;
     padding: 7.5vh 0;
 
@@ -964,15 +980,15 @@ html {
         width: 60vw;
         background: #fff;
         padding: 4em;
-        min-width:1150px;
-        text-align:center;
+        min-width: 1150px;
+        text-align: center;
 
         .title {
             color: $darkGrey;
             font-size: 2rem;
-            font-weight:900;
+            font-weight: 900;
             text-transform: uppercase;
-            text-align:left;
+            text-align: left;
         }
 
         .divider {
@@ -985,7 +1001,7 @@ html {
 
         .grid {
             width: 100%;
-            display:grid;
+            display: grid;
             grid-template-columns: 1fr 1fr;
 
             .text {
@@ -993,10 +1009,10 @@ html {
                 color: $darkGrey;
                 line-height: 2em;
                 margin-top: 2em;
-                text-align:left;
+                text-align: left;
 
                 &:not(:first-of-type) {
-                    margin-left:5%;
+                    margin-left: 5%;
                 }
 
                 .em {
@@ -1011,12 +1027,13 @@ html {
             }
 
             .img {
-                width:90%;
+                width: 90%;
                 margin-bottom: 4em;
                 border-radius: 5px;
 
-                &:first-of-type, &:nth-child(2n) {
-                    margin: 0 auto 4em auto;                    
+                &:first-of-type,
+                &:nth-child(2n) {
+                    margin: 0 auto 4em auto;
                 }
 
                 &.dual-img {
@@ -1029,55 +1046,283 @@ html {
             }
         }
     }
+
+    .case-study {
+        width: 65vw;
+        margin: 3em auto;
+        background: #fff;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+
+        .intro-section {
+            background: #e9e9e9;
+            padding: 3em 4em;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .title {
+                color: $darkGrey;
+                font-size: 2rem;
+                font-weight: 900;
+                text-transform: uppercase;
+            }
+
+            .divider {
+                margin: .6em 0;
+                width: 200px;
+                height: 3px;
+                background-color: $primary;
+            }
+
+            .text {
+                width: 87.5%;
+                color: $darkGrey;
+                line-height: 1.5em;
+                margin-top: 2em;
+
+                .primary {
+                    color: $primary;
+                    font-weight: bold;
+                }
+            }
+
+            .rings {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .ring-grid {
+                    display: grid;
+                    grid-template-columns: repeat(4, 1fr);
+                    width: 75%;
+                    column-gap: 1.25em;
+
+                    .ring-img {
+                        width: 100%;
+                    }
+                }
+
+                .text {
+                    font-size: 1.15rem;
+                    color: #666;
+                    text-transform: uppercase;
+                    text-align: center;
+                    letter-spacing: 2px;
+                }
+            }
+
+            .image-section {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+
+                .img {
+                    width: 90%;
+                    margin-left: 10%;
+                }
+            }
+        }
+
+        .regular-text {
+            margin: 3em 4em;
+            color: $darkGrey;
+            line-height: 1.5em;
+        }
+
+        .hero-img {
+            width: 100%;
+        }
+
+        .hero-grid {
+            background: url("../img/Portfolio\ Home\ Page/Dark Wallpaper.jpg");
+            padding: 2em 3%;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 1em;
+
+            .ring-hero-img {
+                width: 100%;
+            }
+        }
+
+        .content-section {
+            margin: 3em 4em;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            .text-container {
+                width: 90%;
+                display: flex;
+                align-items: center;
+
+                .text {
+                    color: $darkGrey;
+                    line-height: 1.5em;
+                }
+            }
+
+            .images-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                height: 100%;
+                gap: 1em;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+
+                    &.taller {
+                        grid-row: span 2;
+                    }
+                }
+            }
+        }
+
+        .large-img-grid {
+            margin: 2em auto;
+            padding: 0 4em;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: .25em 1.1em;
+
+            img {
+                width: 100%;
+            }
+
+            .two-columns {
+                grid-column: span 2;
+            }
+        }
+
+        .larger-img-grid {
+            margin: 0 auto 1em auto;
+            padding: 0 4em;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 1.1em;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .small-img-grid {
+            margin: 1em auto;
+            padding: 2em 4em;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 1.1em;
+            background: #e9e9e9;
+
+            img {
+                width: 100%;
+            }
+        }
+
+        .heres-what-text {
+            color: $darkGrey;
+            font-size: 1.8rem;
+            font-weight: 900;
+            text-transform: capitalize;
+            width: 45%;
+            margin: 2em auto 1em auto;
+            text-align: center;
+
+            .primary {
+                color: $primary;
+                text-transform: uppercase;
+            }
+        }
+
+        .ending-section {
+            background: #e9e9e9;
+            padding: 4em 4em 8em 4em;
+            text-align: center;
+
+            .testimonial-video {
+                width: 60%;
+                height: 40vh;
+                border: 0;
+                border-radius: 10px;
+            }
+
+            .btn {
+                position: relative;
+                top: 4em;
+            }
+        }
+
+        .btn-container {
+            text-align: center;
+            padding: 2em 0 4em 0;
+
+            .btn {
+                position: relative;
+                top: 1em;
+            }
+        }
+    }
 }
 
 //////// CASE STUDY SECTION (portfolio/*) STYLES ////////
 .case-study-section {
     background: url('../img/BG\ 2.png') center/cover no-repeat fixed;
-    padding: 10vh 20vw;
+    padding: 10vh 25vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2em;
 
-    .case-study {
-        width:100%;
-        min-height: 350px;
+    .case-study-box {
         background: #fff;
-        padding: 1em 1em 1em 4em;
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
+        padding: .5em .5em 5em .5em;
+        border-radius: 5px;
+        position: relative;
 
         .case-study-img {
             width: 100%;
-            height: 325px;
-            object-position: center -20px;
-            object-fit:cover;
-            box-shadow: 0px 0px 5px rgba(0,0,0,0.1);
         }
 
-        .content {
-            margin-top: -10px;
+        .title {
+            color: $darkGrey;
+            font-weight: 900;
+            font-size: 1.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: .25em 0 0 0;
+            text-align: center;
+        }
 
-            .case-study-title {
-                color: $darkGrey;
-                font-size: 2rem;
-                font-weight:900;
-                text-transform: uppercase;
-            }
+        .divider {
+            width: 50%;
+            height: 3px;
+            background-color: $primary;
+            margin: .5em auto 1em auto;
+        }
 
-            .divider {
-                background: $primary;
-                height: 5px;
-                max-width: 150px;
-                width: 20%;
-                margin: .6em 0 1.75em 0;
-            }
+        .desc {
+            font-size: 1rem;
+            width: 85%;
+            margin: 0 auto;
+            line-height: 1.5em;
+            text-align: center;
 
-            .case-study-desc {
-                color: #272727;
-                line-height: 1.5;
-                font-size: .9rem;
-                width: 80%;
-                margin-bottom: 2.5em;
+            .primary {
+                font-weight: bold;
+                color: $primary;
             }
+        }
+
+        .btn {
+            position: absolute;
+            bottom: 2em;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
         }
     }
 }
@@ -1086,17 +1331,17 @@ html {
 .portfolio-work-section {
     background: url('../img/pattern-bg.png') center/cover no-repeat fixed;
     padding: 10vh 20vw;
-    text-align:center;
+    text-align: center;
 
     .work-grid {
-        display:grid;
+        display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 2em;
         margin-bottom: 4em;
 
         .work-image {
-            width:100%;
-            box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+            width: 100%;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
             transition: opacity .4s ease-in-out;
             cursor: pointer;
 
@@ -1107,126 +1352,192 @@ html {
     }
 }
 
-//////// LATEST WORK SECTION (PORTFOLIO) STYLES ////////
+//////// PORTFOLIO SECTIONS (PORTFOLIO) STYLES ////////
 
 .latest-work-section {
-    background: url('../img/pattern-bg.png') center/cover no-repeat fixed;
-    padding: 15vh 25vw;
+    min-height: 110px;
+    background: url('../img/Portfolio\ Home\ Page/Wallpapers.jpg');
+    display: grid;
+    grid-template-columns: 1fr 7fr;
 
-    .content {
+    .logo-box {
+        background: url("../img/Portfolio\ Home\ Page/Dark Wallpaper.jpg") center/cover fixed;
+
+        .logo {
+            width: 42.5%;
+        }
+    }
+
+    .text-box,
+    .logo-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-box {
+        .text {
+            color: $darkGrey;
+            font-weight: 900;
+            font-size: 1.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+
+            .primary {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.case-study-title-section {
+    min-height: 110px;
+    background: url('../img/Portfolio\ Home\ Page/Wallpapers.jpg');
+    display: grid;
+    grid-template-columns: 7fr 1fr;
+
+    .icon-box {
+        background: url("../img/Portfolio\ Home\ Page/Dark Wallpaper.jpg") center/cover fixed;
+
+        .icon {
+            color: #fff;
+        }
+    }
+
+    .text-box,
+    .icon-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .text-box {
+        .text {
+            color: $darkGrey;
+            font-weight: 900;
+            font-size: 1.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+
+            .primary {
+                color: $primary;
+            }
+        }
+    }
+}
+
+.work-category-section {
+    background: url("../img/Portfolio\ Home\ Page/Dark Wallpaper.jpg") center/cover fixed;
+    padding: 4em 5vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1.5em;
+
+    .box {
+        min-height: 70vh;
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        position: relative;
+        transition: opacity .3s ease-in-out;
+
+        .content {
+            min-width: 50%;
+            height: 50px;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            align-items: center;
+            padding: 0 1em;
+            position: absolute;
+            bottom: 4em;
+
+            .work-title {
+                margin-right: .5em;
+                letter-spacing: 1px;
+                font-weight: 700;
+                font-size: 1.25rem;
+            }
+        }
+
+        &:hover {
+            opacity: .75;
+        }
+
+        &.automotive {
+            background: url("../img/Portfolio\ Home\ Page/Auto.jpg") center/cover;
+        }
+
+        &.products {
+            background: url("../img/Portfolio\ Home\ Page/Product.jpg") center/cover;
+        }
+
+        &.people {
+            background: url("../img/Portfolio\ Home\ Page/People.jpg") center/cover;
+        }
+
+        &.plates {
+            background: url("../img/Portfolio\ Home\ Page/Plates.jpg") center/cover;
+        }
+    }
+}
+
+.case-studies-section {
+    background: url("../img/Portfolio\ Home\ Page/Dark Wallpaper.jpg") center/cover fixed;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.5em;
+    padding: 4em 15vw;
+
+    .case-study-box {
+        background: #fff;
+        padding: .5em .5em 5em .5em;
+        border-radius: 5px;
+        position: relative;
+
+        .case-study-img {
+            width: 100%;
+        }
 
         .title {
             color: $darkGrey;
-            text-align:center;
-            font-size: 2rem;
+            font-weight: 900;
+            font-size: 1.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            padding: .25em 0 0 0;
+            text-align: center;
+        }
+
+        .divider {
+            width: 50%;
+            height: 3px;
+            background-color: $primary;
+            margin: .5em auto 1em auto;
         }
 
         .desc {
-            font-size: .85rem;
-            color: lighten($darkGrey, 10%);
-            width: 29%;
-            text-align:center;
-            margin: 1em auto;
+            font-size: 1rem;
+            width: 85%;
+            margin: 0 auto;
             line-height: 1.5em;
+            text-align: center;
+
+            .primary {
+                font-weight: bold;
+                color: $primary;
+            }
         }
 
         .btn {
-            position:relative;
-            left: calc(50% - 70px);
-            top: 1.5em;
-            transform:translateX(-50%);
-        }
-    }
-    
-    .category-grid {
-        display:grid;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 1em;
-        width: 100%;
-        margin: 8em auto 0 auto;
-
-        .category {
-            background: center/cover no-repeat;
-            object-fit: cover;
-            width: 100%;
-            display:flex;
-            align-items: center;
-            text-decoration: none;
-            transition: opacity .4s ease-in-out;
-            height: 15vh;
-
-            .lines {
-                height: 30px;
-                display:grid;
-                grid-template-rows: 1fr 1fr 1fr;
-                row-gap: 7.5px;
-                transition: .4s ease-in-out;
-
-                .line {
-                    width:100%;
-                    height: 100%;
-                    background: #fff;
-                    opacity: .7;
-                }
-            }
-
-            .category-title {
-                color: #fff;
-                font-size: 2rem;
-                margin-left: 1em;
-                text-transform: uppercase;
-                font-weight: 900;
-                letter-spacing: 1px;
-                transition: .4s ease-in-out;
-            }
-
-            .icon {
-                color: #fff;
-                font-size: 1.5rem;
-                margin: 2px 0 0 .5em;
-                transition: .4s ease-in-out;
-            }
-
-            &.first {
-                background-image: url("../img/work/Category\ Images/Plates.jpg");
-
-                .lines {
-                    width: 22.5%;
-                }
-            }
-
-            &.second {
-                background-image: url("../img/work/Category\ Images/Products.jpg");
-                
-                .lines {
-                    width: 37.5%;
-                }
-            }
-
-            &.third {
-                background-image: url("../img/work/Category\ Images/People.jpg");
-               
-                .lines {
-                    width: 52.5%;
-                }
-            }
-
-            &:hover {
-                opacity: .9;
-
-                .lines {
-                    height: 32.5px;
-                    row-gap: 8px;
-                }
-
-                .category-title {
-                    font-size: 2.125rem;
-                }
-
-                .icon {
-                    font-size: 1.625rem;
-                }
-            }
+            position: absolute;
+            bottom: 2em;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
         }
     }
 }
@@ -1240,7 +1551,7 @@ html {
     .question-title {
         color: rgba($darkGrey, 0.75);
         font-size: 2rem;
-        background: rgba(195,195,195,0.65);
+        background: rgba(195, 195, 195, 0.65);
         padding: .5em 1em;
         margin-bottom: 1em;
         cursor: pointer;
@@ -1248,12 +1559,12 @@ html {
         outline: none;
 
         &:hover {
-            background: rgba(175,175,175,0.65);
-            box-shadow: 0px 0px 20px rgba(0,0,0,0.25);
+            background: rgba(175, 175, 175, 0.65);
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
         }
 
         &:focus {
-            background: rgba(165,165,165,0.65);
+            background: rgba(165, 165, 165, 0.65);
         }
 
         span {
@@ -1268,7 +1579,7 @@ html {
         width: 95%;
         line-height: 1.25;
         padding-bottom: 3em;
-        
+
         &:last-of-type {
             margin-bottom: 0;
         }
@@ -1280,13 +1591,13 @@ html {
     }
 
     .btn {
-        position:relative;
+        position: relative;
         top: 5em;
         left: calc(50% - 70px);
         transform: translateX(-50%);
     }
 
-    details[open] summary ~ * {
+    details[open] summary~* {
         animation: sweep .4s ease-in-out;
     }
 }
@@ -1294,103 +1605,47 @@ html {
 //////// TESTIMONIALS SECTION (TESTIMONIALS) STYLES ////////
 
 .testimonials-section {
-    background: rgb(47,47,43);
-    background: -moz-radial-gradient(circle, rgba(47,47,43,1) 0%, rgba(23,23,22,1) 100%);
-    background: -webkit-radial-gradient(circle, rgba(47,47,43,1) 0%, rgba(23,23,22,1) 100%);
-    background: radial-gradient(circle, rgba(47,47,43,1) 0%, rgba(23,23,22,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f2f2b",endColorstr="#171716",GradientType=1);
+    background: url("../img/Portfolio\ Home\ Page/Dark Wallpaper.jpg") center/cover fixed;
+    ;
     padding: 10em 25vw 7.5em 25vw;
     border-bottom: 2px solid #fff;
 
-    .grid {
-        display:grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        column-gap: 1.5em;
-
-        .testimonial-box {
-            width: 100%;
-            position:relative;
-            display: flex;
-            flex-direction: column;
-            padding: 3.5em 0 7em 0;
-
-            .name {
-                z-index: 1;
-                font-size: 1.1rem;
-                margin-bottom: 2em;
-                text-align:center;
-                color: #FF6161;
-            }
-
-            .text {
-                color: #fff;
-                font-style: italic;
-                z-index: 1;
-                font-weight: lighter;
-                text-align:center;
-                width: 75%;
-                margin: 0 auto;
-                letter-spacing: 1px;
-                line-height: 2;
-                opacity: .95;
-                font-size: 1rem;
-                font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
-            }
-
-            .quote-icon {
-                color: #fff;
-                z-index: 1;
-                position:absolute;
-                bottom: 1.5em;
-                left:50%;
-                transform:translateX(-50%);
-                font-size: 2rem;
-                color: #FF6161;
-            }
-
-            &.first::before, &.secnd::before, &.third::before {
-                content: "";
-                background-image: url('../img/testimonials/1.jpg');
-                background-size: cover;
-                position: absolute;
-                top: 0px;
-                right: 0px;
-                bottom: 0px;
-                left: 0px;
-                filter: brightness(0.65);
-                z-index: 0;
-            }
-
-            &.secnd::before {
-                background-image: url('../img/testimonials/2.jpg');
-            }
-
-            &.third::before {
-                background-image: url('../img/testimonials/3.jpg');
-            }
-        }
+    .testimonial-video {
+        width: 100%;
+        height: 57.5vh;
+        border: none;
+        border-radius: 20px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
     }
 
     .large-text {
         font-weight: 900;
-        width: 80%;
+        width: 84%;
         margin: 1em auto;
         color: #575757;
         font-size: 3rem;
-        text-align:center;
+        text-align: center;
         letter-spacing: 3px;
-        text-shadow: 0px 0px 30px rgba(0,0,0,0.5);
+        text-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
     }
 
     .btn {
-        position:absolute;
-        left:50%;
-        transform:translateX(-50%);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
 // Reponsive Media Queries
 @media screen and (max-width:1392px) {
+
+    .case-study-container .case-study {
+        width: 80vw;
+    }
+
+    .case-studies-section {
+        padding: 4em 5vw;
+    }
 
     .home-header {
 
@@ -1464,7 +1719,7 @@ html {
         padding: 10vh 12.5vw 0 12.5vw;
     }
 
-    .introduction  {
+    .introduction {
         padding: 0 15vw;
 
         .text-section {
@@ -1504,7 +1759,8 @@ html {
         padding: 10em 17.5vw 7.5em 17.5vw;
     }
 
-    .affiliate-disclosure-section, .coming-soon-section {
+    .affiliate-disclosure-section,
+    .coming-soon-section {
 
         .title {
             font-size: 2.5rem;
@@ -1524,7 +1780,7 @@ html {
             .service-box {
 
                 .content {
-                    
+
                     .service-heading {
                         font-size: 2.25rem;
                     }
@@ -1542,11 +1798,8 @@ html {
         }
     }
 
-    .latest-work-section {
-        padding: 15vh 17.5vw;
-    }
-
-    .case-study-section, .portfolio-work-section {
+    .case-study-section,
+    .portfolio-work-section {
         padding: 10vh 10vw;
     }
 
@@ -1566,10 +1819,10 @@ html {
 
     .case-study-container .case-study-body {
         min-width: 0;
-        
-        
+
+
         .title {
-            text-align:center;        
+            text-align: center;
         }
 
         .divider {
@@ -1577,11 +1830,11 @@ html {
         }
 
         .grid {
-            display:block;
+            display: block;
 
             .text {
-                text-align:center;
-                width:90%;
+                text-align: center;
+                width: 90%;
                 margin: 0 0 4em 5%;
 
                 &.num-4 {
@@ -1606,6 +1859,23 @@ html {
 }
 
 @media screen and (max-width: 1148px) {
+
+
+    .case-study-container .case-study {
+        width: 90vw;
+    }
+
+    .work-category-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 2em;
+        height: 100vh;
+
+        .box {
+            height: 100%;
+            min-height: 20vh;
+        }
+    }
 
     .home-header {
 
@@ -1651,7 +1921,7 @@ html {
             }
 
             .btn {
-                position:absolute;
+                position: absolute;
                 bottom: 1em;
             }
         }
@@ -1690,7 +1960,7 @@ html {
         }
 
     }
-    
+
     .case-study-section {
 
         .case-study {
@@ -1721,16 +1991,91 @@ html {
 }
 
 @media screen and (max-width:1040px) {
+    .case-study-container .case-study {
+        text-align: center;
 
-    
-    .work, .contact-section, .about-header, .get-in-touch, .header-w-divider, .services-section, .latest-work-section, .faq-section, .affiliate-disclosure-section, .coming-soon-section, .portfolio-work-section, .case-study-container {
+        .intro-section {
+            grid-template-columns: 1fr;
+
+            .divider {
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .text-section .text {
+                margin: 1em auto;
+            }
+
+            .image-section {
+                .img {
+                    width: 50%;
+                    margin: 0 auto;
+                }
+            }
+        }
+
+        .content-section {
+            grid-template-columns: 1fr;
+
+            .text-container .text {
+                margin: 0 0 2em 10%;
+            }
+        }
+
+        .ending-section .testimonial-video {
+            width: 80%;
+        }
+    }
+
+    .case-studies-section {
+        grid-template-columns: 1fr;
+        row-gap: 2em;
+        padding: 4em 30vw;
+
+        .case-study-box {
+            padding-bottom: 6em;
+        }
+    }
+
+    .work,
+    .contact-section,
+    .about-header,
+    .get-in-touch,
+    .header-w-divider,
+    .services-section,
+    .latest-work-section,
+    .faq-section,
+    .affiliate-disclosure-section,
+    .coming-soon-section,
+    .portfolio-work-section,
+    .case-study-container {
         background-attachment: scroll;
+    }
+
+    .latest-work-section {
+        grid-template-columns: 1fr 6fr;
+
+        .text-box {
+            .text {
+                font-size: 1.35rem;
+            }
+        }
+    }
+
+    .case-study-title-section {
+        grid-template-columns: 6fr 1fr;
+
+        .text-box {
+            .text {
+                font-size: 1.35rem;
+            }
+        }
     }
 
     .navbar {
 
         .nav-list {
-            display:none;
+            display: none;
         }
 
         .menu-icon {
@@ -1745,15 +2090,15 @@ html {
     }
 
     .about-section {
-        display:block;
+        display: block;
         height: 70vh;
 
         .image-section {
-            display:none;
+            display: none;
         }
 
         .text-section {
-            display:flex;
+            display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
@@ -1779,11 +2124,11 @@ html {
         .text-section {
 
             .title {
-                text-align:center;
+                text-align: center;
             }
 
             .about-text {
-                text-align:center;
+                text-align: center;
                 margin: 0 auto 2em auto;
             }
 
@@ -1791,8 +2136,9 @@ html {
                 margin: 0 auto;
             }
         }
+
         .adam-img {
-            display:none;
+            display: none;
         }
     }
 
@@ -1810,38 +2156,6 @@ html {
         }
     }
 
-    .latest-work-section {
-        padding: 15vh 15vw;
-
-        .content {
-
-            .desc {
-                width:50%;
-            }
-
-        }
-
-        .category-grid {
-
-            .category {
-                height: 12.5vh;
-
-                .category-title {
-                    font-size: 1.75rem;
-                }
-
-                .icon {
-                    font-size: 1.3rem;
-                }
-
-                .lines {
-                    height: 25px;
-                }
-            }
-        }
-
-    }
-
     .testimonials-section {
         padding: 10em 5vw 7.5em 5vw;
     }
@@ -1853,7 +2167,7 @@ html {
             grid-template-columns: 1fr;
             width: 70vw;
         }
-        
+
     }
 }
 
@@ -1873,11 +2187,11 @@ html {
                 min-height: 294px;
 
                 &:nth-child(n+5) {
-                    display:none;
+                    display: none;
                 }
 
                 &:nth-child(3) {
-                    margin-left:0;
+                    margin-left: 0;
                 }
 
                 &:nth-child(4) {
@@ -1929,6 +2243,26 @@ html {
 
 @media screen and (max-width:884px) {
 
+    .case-study-section {
+        grid-template-columns: 1fr;
+        row-gap: 2em;
+    }
+
+    .case-studies-section {
+        padding: 4em 10vw;
+    }
+
+    .case-study-title-section {
+        grid-template-columns: 5fr 1fr;
+
+        .text-box {
+            .text {
+                width: 62.5%;
+                text-align: center;
+            }
+        }
+    }
+
     .home-header {
 
         .text-container {
@@ -1945,6 +2279,15 @@ html {
         }
     }
 
+    .testimonials-section {
+
+        .testimonial-video {
+            height: 30vh;
+            width: 70%;
+            margin-left: 15%;
+        }
+    }
+
     .large-footer {
 
         .footer-grid {
@@ -1953,7 +2296,7 @@ html {
             row-gap: 10vh;
 
             .email-section {
-                text-align:center;
+                text-align: center;
 
                 .text {
                     margin: 2em auto;
@@ -1964,9 +2307,9 @@ html {
             }
 
             .lists-section {
-                
+
                 .list-container {
-                    text-align:center;
+                    text-align: center;
 
                     .heading {
                         font-size: 1.15rem;
@@ -1995,6 +2338,7 @@ html {
             grid-template-columns: 1fr;
             width: 50vw;
         }
+
         .box {
             height: 30vh;
         }
@@ -2010,7 +2354,7 @@ html {
 
         .question-title {
             font-size: 1.5rem;
-            text-align:center;
+            text-align: center;
         }
 
         .question-content {
@@ -2018,29 +2362,16 @@ html {
         }
     }
 
-    .testimonials-section {
-        
-        .grid {
-            grid-template-columns: 1fr;
-            row-gap: 2em;
-
-            .testimonial-box {
-                width:50%;
-                margin: 0 auto;
-            }
-        }
-    }
-
     .case-study-section {
         padding: 10vh 20vw;
 
         .case-study {
-            display:block;
+            display: block;
             padding: 2em;
 
             .content {
                 padding: 1em;
-                text-align:center;
+                text-align: center;
 
                 .divider {
                     margin: 1em auto;
@@ -2053,9 +2384,9 @@ html {
 
             .case-study-img {
                 width: 50%;
-                position:relative;
-                left:50%;
-                transform:translateX(-50%);
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
                 height: 100%;
                 margin-top: 2em;
             }
@@ -2065,6 +2396,37 @@ html {
 }
 
 @media screen and (max-width: 712px) {
+
+    .case-study-container .case-study {
+        .intro-section .image-section .img {
+            width: 90%;
+        }
+
+        .small-img-grid {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .hero-grid {
+            grid-template-columns: 1fr 1fr;
+            row-gap: 2em;
+        }
+
+        .ending-section .testimonial-video {
+            width: 100%;
+            height: 30vh;
+        }
+    }
+
+    .latest-work-section {
+        grid-template-columns: 1fr 5fr;
+
+        .text-box {
+            .text {
+                width: 62.5%;
+                text-align: center;
+            }
+        }
+    }
 
     .home-header {
         min-height: 650px;
@@ -2096,6 +2458,14 @@ html {
         }
     }
 
+    .testimonials-section {
+        .testimonial-video {
+            width: 85%;
+            height: 40vh;
+            margin-left: 7.5%;
+        }
+    }
+
     .work {
 
         .work-heading {
@@ -2119,7 +2489,7 @@ html {
                 }
 
                 &:nth-child(4) {
-                    display:none;
+                    display: none;
                 }
 
             }
@@ -2148,11 +2518,12 @@ html {
     .header-w-divider {
         .page-title {
             font-size: 2.75rem;
-            width:75%;
+            width: 75%;
         }
     }
 
-    .affiliate-disclosure-section, .coming-soon-section {
+    .affiliate-disclosure-section,
+    .coming-soon-section {
 
         .title {
             width: 75%;
@@ -2165,27 +2536,12 @@ html {
 
     .services-section {
         padding: 15vh 5vw;
-        
+
         .grid {
             width: 90vw;
             gap: 2em;
         }
-        
-    }
 
-    .latest-work-section {
-        padding: 15vh 5vw;
-
-        .category-grid {
-
-            .category {
-                justify-content: center;
-
-                .lines {
-                    display:none;
-                }
-            }
-        }
     }
 
     .portfolio-popup-image {
@@ -2195,6 +2551,36 @@ html {
 
 @media screen and (max-width: 548px) {
 
+    .case-study-container .case-study {
+
+        .content-section .images-container,
+        .large-img-grid,
+        .small-img-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .work-category-section {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        height: 110vh;
+    }
+
+    .latest-work-section {
+        grid-template-columns: 1fr;
+        height: 30vh;
+
+        .logo-box .logo {
+            width: 20%;
+            max-width: 150px;
+        }
+    }
+
+    .case-study-title-section {
+        grid-template-columns: 1fr;
+        height: 30vh;
+    }
+
     .navbar {
         height: 100px;
 
@@ -2203,7 +2589,7 @@ html {
         }
     }
 
-    .home-header { 
+    .home-header {
         min-height: 500px;
         height: 50vh;
 
@@ -2229,7 +2615,7 @@ html {
 
     .about-section {
         min-height: 750px;
-        
+
         .text-section {
 
             .title {
@@ -2259,7 +2645,7 @@ html {
             letter-spacing: 2.5px;
         }
 
-        .grid  {
+        .grid {
             width: 75vw;
 
             .box {
@@ -2270,6 +2656,7 @@ html {
             }
         }
     }
+
     .header-w-divider {
         height: 50vh;
 
@@ -2278,34 +2665,12 @@ html {
         }
 
         .page-title {
-            width:80%;
+            width: 80%;
         }
     }
 
-    .latest-work-section {
-        padding-left: 5vw;
-        padding-right: 5vw;
-
-        .content {
-
-            .desc {
-                width:100%;
-            }
-
-        }
-    }
-
-    .testimonials-section {
-        
-        .grid {
-
-            .testimonial-box {
-                width:75%;
-            }
-        }
-    }
-
-    .affiliate-disclosure-section, .coming-soon-section {
+    .affiliate-disclosure-section,
+    .coming-soon-section {
         min-height: 85vh;
 
         .title {
@@ -2323,14 +2688,14 @@ html {
 
         .grid {
             gap: 4em;
-            
+
             .service-box {
-                display:flex;
+                display: flex;
                 flex-direction: column;
                 padding-bottom: 2em;
 
                 .content {
-                    text-align:center;
+                    text-align: center;
 
                     .divider {
                         margin: 0 auto 1.5em auto;
@@ -2382,5 +2747,11 @@ html {
 
     .case-study-container .case-study-body {
         width: 90vw;
+    }
+
+    .testimonials-section {
+        .testimonial-video {
+            height: 25vh;
+        }
     }
 }
