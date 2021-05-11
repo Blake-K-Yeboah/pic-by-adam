@@ -746,7 +746,7 @@ html {
     height: 40vh;
     margin-top: 80px;
     background: url('../img/our-work-bg.png') center/cover no-repeat fixed;
-    border-bottom: 2px solid #fff;
+    border-bottom: 2.1px solid #fff;
     position: relative;
 
     &.portraits-bg {
@@ -754,11 +754,11 @@ html {
     }
 
     &.plates-bg {
-        background: url('../img/work/Category\ Images/header-plates.jpg');
+        background: url('../img/work/Category Images/header-plates.jpg');
     }
 
     &.products-bg {
-        background: url('../img/work/Category\ Images/header-products.jpg');
+        background: url('../img/work/Category Images/header-products.jpg');
     }
 
     &.the-ring-shop-bg {

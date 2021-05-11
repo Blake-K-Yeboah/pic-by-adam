@@ -793,7 +793,7 @@ html {
   height: 40vh;
   margin-top: 80px;
   background: url("../img/our-work-bg.png") center/cover no-repeat fixed;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2.1px solid #fff;
   position: relative;
 }
 
